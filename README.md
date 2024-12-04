@@ -1,2 +1,10 @@
-# Consumo-Energ-a-Electrica-
-Proyecto 3  Curso Data Scientist  UOC 2024  consumo de electricidad de una cooperativa energética
+## Proyecto 3  Curso Data Scientist  UOC 2024 
+Descripipción: Consumo Energía Eléctricade cooperativa energética
+## Dataset Donwload:
+https://www.sciencedirect.com/science/article/pii/S2352340924003421
+## Artículo de datos:
+https://data.mendeley.com/datasets/vryvyfz2tj/1
+## Autores de los datos y su artículo:
+Francisco Monteiro, Rafael Oliveira, Juan Almeida, Pedro Gonçalves, Paulo Bartolomeu,Jorge Neto y Ricardo Dios 
+Licencia Creative Commons: 
+Este es un artículo de acceso abierto distribuido bajo los términos de la licencia Creative Commons CC-BY , que permite el uso, la distribución y la reproducción sin restricciones en cualquier medio, siempre que se cite correctamente la obra original.
