@@ -1,5 +1,6 @@
 ## Proyecto 3  Curso Data Scientist  UOC 2024 
 https://github.com/users/pugasoca/projects/1?pane=issue&itemId=89559047
+
 Descripipción: Consumo Energía Eléctricade cooperativa energética.
 ## Autor: José Puga Socarrás
 https://www.linkedin.com/in/jose-puga-socarras-89677111 
