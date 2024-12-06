@@ -3,7 +3,7 @@ https://github.com/users/pugasoca/projects/1?pane=issue&itemId=89559047
 Descripipción: Consumo Energía Eléctricade cooperativa energética.
 ## Autor: José Puga Socarrás
 https://www.linkedin.com/in/jose-puga-socarras-89677111 
-## Consultor Tecnico Energia: Alejandro Sanchez Venereo
+## Consultor Técnico Temas Energeticos: Alejandro Sanchez Venereo
 https://www.linkedin.com/in/alejandro-sanchez-venereo-35069833/
 ## Dataset Donwload:
 https://www.sciencedirect.com/science/article/pii/S2352340924003421
