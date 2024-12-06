@@ -3,7 +3,8 @@ https://github.com/users/pugasoca/projects/1?pane=issue&itemId=89559047
 
 Descripipción: Consumo Energía Eléctricade cooperativa energética.
 ## Autor: José Puga Socarrás
-https://www.linkedin.com/in/jose-puga-socarras-89677111 
+- linkedin: https://www.linkedin.com/in/jose-puga-socarras-89677111
+- Correo : jpugas@uoc.edu
 ## Consultor Técnico Temas Energeticos: Alejandro Sanchez Venereo
 https://www.linkedin.com/in/alejandro-sanchez-venereo-35069833/
 ## Dataset Donwload:
@@ -22,6 +23,5 @@ Datos meteorológicos locales. Algunas columnas tienen valores faltantes (NaN). 
 
 ## Objetivos
 - Caracterizar el perfil de consumo de energía eléctrica de los habitantes de la región y correlacionar los hábitos de consumo en función de las condiciones climáticas, como la temperatura, la luz o la humedad.
-- 
 - Ayudar a comprender los comportamientos y las tendencias de consumo. También pueden ser utilizados por los consumidores al tomar decisiones relacionadas con la compra/venta/almacenamiento de energía, teniendo en cuenta las perspectivas de consumo futuras y las condiciones meteorológicas.
-- El conjunto de datos también puede ser utilizado por los investigadores en la construcción de modelos de aprendizaje, capaces de predecir el consumo futuro y modelos que pueden mejorarse al aprender el impacto causado por las condiciones ambientales relacionadas.
+- Construcción de modelos de aprendizaje, capaces de predecir el consumo futuro y modelos que pueden mejorarse al aprender el impacto causado por las condiciones ambientales relacionadas.
