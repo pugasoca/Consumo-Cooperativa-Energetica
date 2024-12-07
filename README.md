@@ -42,7 +42,7 @@ El conjunto de datos contiene información sobre el consumo eléctrico y datos m
  # Análisis de Calidad de los Datos
   
 - loureiro_energy.csv:
-   El conjunto de datos incluye mediciones de consumo de energía de 172 edificios de una cooperativa Energetica, recopiladas cada 15 minutos mediante medidores inteligentes entre el 05/05/2022 y el 02/09/2023. Consta de 46,608 filas, organizadas por fecha y hora, y presenta columnas para cada edificio, además de una columna de tiempo .
+   El conjunto de datos incluye mediciones de consumo de energía de 172 edificios de una cooperativa Energetica, recopiladas cada 15 minutos mediante medidores inteligentes entre el 05/05/2022 y el 02/09/2023. Consta de 46,608 filas, organizadas por fecha y hora, y presenta columnas para cada edificio, además de una columna de tiempo .  A algunos edificios les faltan entradas, que están marcadas como (NaN).
 ![loureiro_energy.csv](img/fig1.LoureiroDataset.PNG)
 
 Columna 
@@ -66,13 +66,35 @@ Para comprender mejor la estructura de datos, a continuación se presenta una ex
 - **“Max_Inst_Precip”**: intensidad máxima de precipitación instantánea en mm/h.
 - **“Total_Global_Rad”**: radiación global total, medida en KJ/m².
 
-
 Como se puede observar no existen valores duplicados en ninguno de los dos Dataset
 ![duplicados](img/Fig4Valoresduplicados.PNG)
 
-### Se verifica que están todo el rango de valores de fecha . Para hacerlo contamos cuantos observaciones de fecha existen entre el minimo y el maximo y debe ser igual a la cantidad de observaciones 46608, creamos una serie de fechas basada en los parámetros que especificaste (start, end, freq). Tabién verificamos que los rangos son iguales a los de las dos dataset 
+#### Se verifica que están todo el rango de valores de fecha . Para hacerlo contamos cuantos observaciones de fecha existen entre el minimo y el maximo y debe ser igual a la cantidad de observaciones 46608, creamos una serie de fechas basada en los parámetros que especificaste (start, end, freq). Tabién verificamos que los rangos son iguales a los rangos de las dos dataset 
 
 ![rango](img/fig5rangofechas.PNG)
+
+ ## Identificando problemas como valores faltantes,
+ 
+**Conclusión:**
+
+Concluimos que la presencia de valores nulos en los datos es un comportamiento relativamente común en el sector de la energía relacionados con la recopilacion de datos en en exteriores . 
+En nuestro estudio, un 25% de valores nulos no debería influir de manera significativa en los resultados. Sin embargo, es importante señalar que un porcentaje de nulos tan alto puede requerir atención en ciertos casos.
+
+Esta falta de datos puede ser causada por muchos motivos: 
+
+1.	**Falta de Consumo o Demanda:** Si no hay consumo de energía en el momento en que se realiza la medición, el PLC podría registrar un valor de cero. Por ejemplo, si un dispositivo o sistema que está siendo monitoreado está apagado o en reposo, el consumo de energía podría ser cero.
+2.	Interrupciones o Fallos en la Comunicación: Si el PLC pierde la comunicación con el medidor de energía o con algún dispositivo asociado, es posible que registre un valor de cero debido a un fallo de comunicación o un error de lectura temporal.
+3.	Error de Configuración: Un error de configuración en el PLC o en el sistema de adquisición de datos puede causar que los valores se registren como cero, si hay un problema con el mapeo de las direcciones de memoria, configuraciones incorrectas o una mala calibración del medidor de energía.
+4.	**Mediciones en el Intervalo de 0**: En sistemas que toman lecturas en intervalos pequeños (como cada 15 minutos), podría ocurrir que en ciertos momentos el consumo de energía se registre como cero si no se consume energía en ese intervalo exacto.
+5.	Condiciones Específicas de Medición: En algunos sistemas, el medidor de energía puede estar configurado para registrar un valor de cero durante ciertos períodos de inactividad, como cuando no se detecta flujo de energía o cuando los dispositivos monitoreados están apagados temporalmente.
+6.	Reset o Inicialización del Sistema: Si el PLC o el colector de datos se reinicia o se restablece, puede haber momentos en los que los valores se inician en cero hasta que se obtengan nuevas mediciones
+
+
+**Recomendación:**
+
+Recomendamos realizar el mismo análisis exclusivamente con los PLC (Controladores Lógicos Programables) que hayan recopilado la mayor cantidad de datos. Alternativamente, se puede considerar la imputación de valores nulos. Esto permitiría mejorar la capacidad para entrenar modelos más precisos y confiables, reduciendo el riesgo de introducir sesgos derivados de la imputación o eliminación de datos. De esta manera, el modelo podría basarse en datos más completos y representativos, mejorando la calidad de las predicciones y análisis.
+
+
 
 
 # Análisis Exploratorio de Datos (EDA)
