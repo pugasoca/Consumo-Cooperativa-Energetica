@@ -72,6 +72,7 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
 
 ### Se verifica que están todo el rango de valores de fecha . Para hacerlo contamos cuantos observaciones de fecha existen entre el minimo y el maximo y debe ser igual a la cantidad de observaciones 46608, creamos una serie de fechas basada en los parámetros que especificaste (start, end, freq). Tabién verificamos que los rangos son iguales a los de las dos dataset 
 
+![rango](img/fig5rangofechas.PNG)
 
 
 # Análisis Exploratorio de Datos (EDA)
