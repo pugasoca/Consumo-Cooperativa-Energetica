@@ -74,6 +74,8 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
 ![rango](img/fig5rangofechas.PNG)
 
  ## Identificando problemas como valores faltantes,
+
+ ![nulos1](img/valores_nulos_porciento.PNG)
  
 **Conclusión:**
 
