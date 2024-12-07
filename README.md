@@ -78,7 +78,7 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
 **Conclusión:**
 
 Concluimos que la presencia de valores nulos en los datos es un comportamiento relativamente común en el sector de la energía relacionados con la recopilacion de datos en en exteriores . 
-En nuestro estudio, un 25% de valores nulos no debería influir de manera significativa en los resultados. Sin embargo, es importante señalar que un porcentaje de nulos tan alto puede requerir atención en ciertos casos.
+En nuestro estudio, un 25% de valores nulos no debería influir de manera significativa en los resultados. 
 
 Esta falta de datos puede ser causada por muchos motivos: 
 
@@ -92,7 +92,7 @@ Esta falta de datos puede ser causada por muchos motivos:
 
 **Recomendación:**
 
-Recomendamos realizar el mismo análisis exclusivamente con los PLC (Controladores Lógicos Programables) que hayan recopilado la mayor cantidad de datos. Alternativamente, se puede considerar la imputación de valores nulos. Esto permitiría mejorar la capacidad para entrenar modelos más precisos y confiables, reduciendo el riesgo de introducir sesgos derivados de la imputación o eliminación de datos. De esta manera, el modelo podría basarse en datos más completos y representativos, mejorando la calidad de las predicciones y análisis.
+Recomendamos realizar el mismo análisis exclusivamente con los PLC (Controladores Lógicos Programables) que hayan recopilado la mayor cantidad de datos. Alternativamente, se considerara la imputación de valores nulos. Esto permitiría mejorar la capacidad para entrenar modelos más precisos y confiables, reduciendo el riesgo de introducir sesgos derivados de la eliminación de datos. De esta manera, el modelo podría basarse en datos más completos y representativos, mejorando la calidad de las predicciones y análisis.
 
 
 
