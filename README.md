@@ -3,8 +3,7 @@ https://github.com/users/pugasoca/projects/1?pane=issue&itemId=89559047
 
 **Descripipción:** Consumo Energía Eléctricade cooperativa energética.
 
-![](img/fig0.comunidadenergetica.PNG)
-
+![com](img/fig0.comunidadenergetica.PNG)
 
 **Autor:** José Puga Socarrás
 - linkedin: https://www.linkedin.com/in/jose-puga-socarras-89677111
