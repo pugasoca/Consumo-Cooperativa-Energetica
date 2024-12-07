@@ -52,8 +52,26 @@ Energy_Meter_1 ...  Energy_Meter_172: KWHora ejemplo= 0.058
   Datos meteorológicos locales. Algunas columnas tienen valores faltantes (NaN). Los datos meteorológicos, tomados de una estación cercana en Aveiro, complementan las mediciones energéticas, coincidiendo en tiempo y número de registros; los datos meteorológicos fueron recopilados originalmente en intervalos de 10 minutos. Para coincidir con los intervalos de 15 minutos de los datos de consumo de energía, se remuestrearon promediando los minutos 10 y 20 para asignarlos al intervalo de 15 minutos, y los minutos 40 y 50 para el intervalo de 45 minutos, manteniendo los valores de los minutos 0 y 30.
 ![loureiro_energy.csv](img/fig2weather_aveiro_finalt.PNG)
 
+Para comprender mejor la estructura de datos, a continuación se presenta una explicación detallada de cada columna:
+
+- **“Hora”**: fecha y hora de la medición registrada.
+- **“Energy_Meter_x”**: consumo de energía en intervalos de 15 minutos (kWh) del medidor con ID x.
+- **“Avg_Temp”**: temperatura media del aire a 1,5 m sobre el suelo, presentada en grados Celsius (°C).
+- **“Avg_Rel_Humidity”**: la humedad relativa promedio en porcentaje.
+- **“Avg_Wind_Direction”**: dirección del viento, de 0 a 360°.
+- **“Avg_Wind_Speed”**: velocidad del viento en m/s.
+- **“Max_Inst_Wind_Speed”**: velocidad máxima instantánea del viento, también en m/s.
+- **“Inst_Temp”**: temperatura instantánea del aire a 1,5 m, en grados Celsius (°C).
+- **“Quantity_Precip”**: cantidad de precipitación en milímetros.
+- **“Max_Inst_Precip”**: intensidad máxima de precipitación instantánea en mm/h.
+- **“Total_Global_Rad”**: radiación global total, medida en KJ/m².
+
+
 Como se puede observar no existen valores duplicados en ninguno de los dos Dataset
 ![duplicados](img/Fig4Valoresduplicados.PNG)
+
+### Se verifica que están todo el rango de valores de fecha . Para hacerlo contamos cuantos observaciones de fecha existen entre el minimo y el maximo y debe ser igual a la cantidad de observaciones 46608, creamos una serie de fechas basada en los parámetros que especificaste (start, end, freq). Tabién verificamos que los rangos son iguales a los de las dos dataset 
+
 
 
 # Análisis Exploratorio de Datos (EDA)
