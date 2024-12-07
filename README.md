@@ -3,7 +3,7 @@ https://github.com/users/pugasoca/projects/1?pane=issue&itemId=89559047
 
 **Descripipción:** Consumo Energía Eléctricade cooperativa energética.
 
-![comunidad](img/fig0.comunidadenergetica.PNG)
+![comunidad](img/fig0.comunidadenergetica.jpg)
 
 **Autor:** José Puga Socarrás
 - linkedin: https://www.linkedin.com/in/jose-puga-socarras-89677111
@@ -93,6 +93,7 @@ Esta falta de datos puede ser causada por muchos motivos:
 **Recomendación:**
 
 Recomendamos realizar el mismo análisis exclusivamente con los PLC (Controladores Lógicos Programables) que hayan recopilado la mayor cantidad de datos. Alternativamente, se puede considerar la imputación de valores nulos. Esto permitiría mejorar la capacidad para entrenar modelos más precisos y confiables, reduciendo el riesgo de introducir sesgos derivados de la imputación o eliminación de datos. De esta manera, el modelo podría basarse en datos más completos y representativos, mejorando la calidad de las predicciones y análisis.
+
 
 
 
