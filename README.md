@@ -74,7 +74,7 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
 ![rango](img/fig5rangofechas.PNG)
 
  ## Identificando problemas como valores faltantes por dispositivos,
-![mapa](img/mapa_nulos_data_energys.PNG)
+![mapa](img/mapa_nulos_data_energy.PNG)
  
 # Porciento de valores faltantes por dispositivos
  ![nulos1](img/valores_nulos_porciento.png)
@@ -97,8 +97,6 @@ Esta falta de datos puede ser causada por muchos motivos:
 **Recomendación:**
 
 Recomendamos realizar el mismo análisis exclusivamente con los PLC (Controladores Lógicos Programables) que hayan recopilado la mayor cantidad de datos. Alternativamente, se considerara la imputación de valores nulos. Esto permitiría mejorar la capacidad para entrenar modelos más precisos y confiables, reduciendo el riesgo de introducir sesgos derivados de la eliminación de datos. De esta manera, el modelo podría basarse en datos más completos y representativos, mejorando la calidad de las predicciones y análisis.
-
-
 
 
 
