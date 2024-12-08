@@ -36,6 +36,7 @@ El conjunto de datos contiene información sobre el consumo eléctrico y datos m
 **Objetivos**
 - Caracterizar el perfil de consumo de energía eléctrica de los habitantes de la región y correlacionar los hábitos de consumo en función de las condiciones climáticas, como la temperatura, la luz o la humedad, 
 - Ayudar a comprender los comportamientos y las tendencias de consumo. También pueden ser utilizados por los consumidores al tomar decisiones relacionadas con la compra/venta/almacenamiento de energía, teniendo en cuenta las perspectivas de consumo futuras y las condiciones meteorológicas.
+- Analizar el coportamiento de los  medidores inteligentes PLC. Funcionamiento o no.
 - Construcción de modelos de aprendizaje, capaces de predecir el consumo futuro y modelos que pueden mejorarse al aprender el impacto causado por las condiciones ambientales relacionadas.
 - Personal: Aplicar los conociemientos apendidos durante el curso.
 
@@ -178,11 +179,18 @@ En las mañanas y tardes, el consumo suele ser más alto debido al uso de electr
 ### Condiciones de las vivienda ( materiales aislantes,ventanas,etc)
 ### Condicones meterorologoicas ( Temperatura, viento, incidencia del sol, lluvias ) Están serán motivo de estudios del presente proyecto 
 
-Top 3 Dispositvos con mayor faltante de datos, debido a cualquier de las razones anterioes pero en el tiempo vemos algunos que siguen funcionando.
+## Analisis del comportamiento de los dispositivos 
+
+Top 3 dispositvos con mayor faltante de datos, debido a cualquier de las razones anteriores pero en el tiempo vemos algunos que siguen funcionando.
 
 ![nulosyceros](img/fig8tot3nulos.png)
 
 Top 5 Dispositvos con mayor cantiadad de datos
 
 ![nulosyceros](img/fig9tot5masdatos.png)
+
+Del top 5 de dispoivos vemos que hay un período que nimguno registró valores mayores que cero 
+
+### Alanalizamos cuando o no los dispositivos funcionaron 
+Vemos que hay algunos momentos(3) que no funcionaron todos y un periodo a del 2023/7 al 2023/9 que hubo gran flutuación todos funcionaban o no 
 
