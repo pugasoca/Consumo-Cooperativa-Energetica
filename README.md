@@ -177,7 +177,7 @@ Lo que sería **100-150 Wh** cada 15 minutos.
 En las mañanas y tardes, el consumo suele ser más alto debido al uso de electrodomésticos como lavadoras, secadoras y equipos de cocina.
 
 ### Condiciones de las vivienda ( materiales aislantes,ventanas,etc)
-### Condicones meterorologoicas ( Temperatura, viento, incidencia del sol, lluvias ) Están serán motivo de estudios del presente proyecto 
+### Condicones  meteorológica ( Temperatura, viento, incidencia del sol, lluvias ) Están serán motivo de estudios del presente proyecto 
 
 ## Analisis del comportamiento de los dispositivos 
 
