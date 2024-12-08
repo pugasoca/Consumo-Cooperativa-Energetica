@@ -42,14 +42,14 @@ El conjunto de datos contiene información sobre el consumo eléctrico y datos m
  # Análisis de Calidad de los Datos
   
 - loureiro_energy.csv:
-   El conjunto de datos incluye mediciones de consumo de energía de 172 edificios de una cooperativa Energetica, recopiladas cada 15 minutos mediante medidores inteligentes entre el 05/05/2022 y el 02/09/2023. Consta de 46,608 filas, organizadas por fecha y hora, y presenta columnas para cada edificio, además de una columna de tiempo .  A algunos edificios les faltan entradas, que están marcadas como (NaN).
+   El conjunto de datos incluye mediciones de consumo de energía de 172 edificios de una cooperativa Energetica, recopiladas cada 15 minutos mediante medidores inteligentes PLC entre el 05/05/2022 y el 02/09/2023. Consta de 46,608 filas, organizadas por fecha y hora, y presenta columnas para cada edificio, además de una columna de tiempo .  A algunos edificios les faltan entradas, que están marcadas como (NaN).
 ![loureiro_energy.csv](img/fig1.LoureiroDataset.PNG)
 
 Columna 
 Time: fecha y hora ejemplo:  2023-01-03 05:52:30  
 Energy_Meter_1 ...  Energy_Meter_172: KWHora ejemplo= 0.058
 - weather_aveiro_final.csv:
-  Datos meteorológicos locales. Algunas columnas tienen valores faltantes (NaN). Los datos meteorológicos, tomados de una estación cercana en Aveiro, complementan las mediciones energéticas, coincidiendo en tiempo y número de registros; los datos meteorológicos fueron recopilados originalmente en intervalos de 10 minutos. Para coincidir con los intervalos de 15 minutos de los datos de consumo de energía, se remuestrearon promediando los minutos 10 y 20 para asignarlos al intervalo de 15 minutos, y los minutos 40 y 50 para el intervalo de 45 minutos, manteniendo los valores de los minutos 0 y 30.
+  Datos meteorológicos locales. Tomados de una estación cercana en Aveiro, complementan las mediciones energéticas, coincidiendo en tiempo y número de registros; fueron recopilados originalmente en intervalos de 10 minutos. Para coincidir con los intervalos de 15 minutos de los datos de consumo de energía, se remuestrearon promediando los minutos 10 y 20 para asignarlos al intervalo de 15 minutos, y los minutos 40 y 50 para el intervalo de 45 minutos, manteniendo los valores de los minutos 0 y 30.
 ![loureiro_energy.csv](img/fig2weather_aveiro_finalt.PNG)
 
 Para comprender mejor la estructura de datos, a continuación se presenta una explicación detallada de cada columna:
@@ -73,8 +73,10 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
 
 ![rango](img/fig5rangofechas.PNG)
 
- ## Identificando problemas como valores faltantes,
-
+ ## Identificando problemas como valores faltantes por dispositivos,
+![mapa](img/mapa_nulos_data_energys.PNG)
+ 
+# Porciento de valores faltantes por dispositivos
  ![nulos1](img/valores_nulos_porciento.png)
  
 **Conclusión:**
