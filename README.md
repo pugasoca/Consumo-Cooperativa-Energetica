@@ -184,7 +184,7 @@ En las mañanas y tardes, el consumo suele ser más alto debido al uso de electr
 ![nulosyceros](img/distribution_of_values.png)
 
 
-Top 3 dispositvos con mayor faltante de datos, debido a cualquier de las razones anteriores pero en el tiempo vemos algunos que siguen funcionando.
+Top 3 dispositvos con mayor faltante de datos, debido a cualquier de las razones anteriores pero con en el tiempo vemos algunos siguen funcionando.
 
 ![nulosyceros](img/fig8tot3nulos.png)
 
@@ -195,6 +195,16 @@ Top 5 Dispositvos con mayor cantiadad de datos
 Del top 5 de dispositivos vemos que hay un período que ninguno registró valores.
 
 ### Alanalizamos cuando o no los dispositivos funcionaron 
-Vemos que hay algunos momentos(3) que no funcionaron todos y un periodo a del 2023/7 al 2023/9 que hubo gran flutuación todos funcionaban hacemos un 
+
+Vemos que hay algunos momentos(3) que no funcionaron todos y un período del 2023/7 al 2023/9 existió gran flutuación en su funcionamiento,
+hacemos un corte de ese período y lo vemos mejor, es algo a discutir con lo técnicos, nosotros trataremos este perído como outlier pero lo incoporamos
+a nuestro estudio. 
+
+![malperio](img/peridomalfunci.png)
+
+
+
+
+
 
 
