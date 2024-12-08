@@ -196,9 +196,9 @@ Del top 5 de dispositivos vemos que hay un período que ninguno registró valore
 
 ### Alanalizamos cuando o no los dispositivos funcionaron 
 
-Vemos que hay algunos momentos(3) que no funcionaron todos y un período del 2023/7 al 2023/9 existió gran flutuación en su funcionamiento,
-hacemos un corte de ese período y lo vemos mejor, es algo a discutir con lo técnicos, nosotros trataremos este perído como outlier pero lo incoporamos
-a nuestro estudio. 
+Observamos que existen algunos momentos específicos (3) en los que ninguno de los dispositivos operó, así como un período significativo entre julio de 2023 y septiembre de 2023 en el que se evidenció una gran fluctuación en su funcionamiento.
+
+Hemos segmentado este período para realizar un análisis más detallado, ya que consideramos que este comportamiento anómalo debe ser discutido con los técnicos responsables. No obstante, trataremos este período como un outlier en nuestro análisis principal, pero lo incluiremos en el estudio para garantizar una visión más integral de los datos.
 
 ![malperio](img/peridomalfunci.png)
 
