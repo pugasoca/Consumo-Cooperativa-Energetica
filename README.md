@@ -111,6 +111,8 @@ Concluimos que la presencia de valores nulos y ceros en los datos es un comporta
 En nuestro estudio, hay un 25% de valores nulos no debería influir de manera significativa en los resultados, pero para este estudio , y desde un ponto de vista técnico imputaremos los valores nulos 
 con alguna de las tecnicas aprendidas durante el curso, con las mediciones en ceros en nuetro proyecto en partícular tomamos la decicion de darlos por buenos, recomendamos un estudio posterior imputando valores a los ceros. 
 
+# No no obstante nos enfocaremos en el proyecto en los 10 dispositivos con mayor cantidad de datos y menos valores nulos siendo estos imputados por .... 
+
 
 **Recomendación:**
 
@@ -176,6 +178,6 @@ En las mañanas y tardes, el consumo suele ser más alto debido al uso de electr
 ### Condiciones de las vivienda ( materiales aislantes,ventanas,etc)
 ### Condicones meterorologoicas ( Temperatura, viento, incidencia del sol, lluvias ) Están serán motivo de estudios del presente proyecto 
 
-
+![nulosyceros](img/fig8tot3nulos.PNG)
 
  
