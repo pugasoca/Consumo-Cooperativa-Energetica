@@ -178,6 +178,11 @@ En las mañanas y tardes, el consumo suele ser más alto debido al uso de electr
 ### Condiciones de las vivienda ( materiales aislantes,ventanas,etc)
 ### Condicones meterorologoicas ( Temperatura, viento, incidencia del sol, lluvias ) Están serán motivo de estudios del presente proyecto 
 
+Top 3 Dispositvos con mayor faltante de datos, debido a cualquier de las razones anterioes pero en el tiempo vemos algunos que siguen funcionando.
+
 ![nulosyceros](img/fig8tot3nulos.png)
 
- 
+Top 5 Dispositvos con mayor cantiadad de datos
+
+![nulosyceros](img/fig9tot5masdatos.png)
+
