@@ -74,19 +74,15 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
 ![rango](img/fig5rangofechas.PNG)
 
  ## Identificando problemas como valores faltantes por dispositivos e interpretación de mediciones con valores cero 
-
  
 ![mapa](img/mapa_nulos_data_energy.png)
 
  # Porciento de valores faltantes por dispositivos
  ![nulos1](img/valores_nulos_porciento.png)
  
-**Conclusión:**
-De el mapa de calor de vnulos de data_energy obsevamos variois dispositivos con gran cantidad de valores nulos ,al igula que algunos intervalos que todos los dispositivos tienen valores nulos.
-Concluimos que la presencia de valores nulos en los datos es un comportamiento relativamente común en el sector de la energía relacionados con la recopilacion de datos en en exteriores . 
-En nuestro estudio, un 25% de valores nulos no debería influir de manera significativa en los resultados. 
 
-Esta falta de datos puede ser causada por muchos motivos: 
+
+Esta falta de datos y valores con ceros puede ser causada por muchos motivos: 
 
 1.	**Falta de Consumo o Demanda:** Si no hay consumo de energía en el momento en que se realiza la medición, el PLC podría registrar un valor de cero. Por ejemplo, si un dispositivo o sistema que está siendo monitoreado está apagado o en reposo, el consumo de energía podría ser cero.
 2.	Interrupciones o Fallos en la Comunicación: Si el PLC pierde la comunicación con el medidor de energía o con algún dispositivo asociado, es posible que registre un valor de cero debido a un fallo de comunicación o un error de lectura temporal.
@@ -94,6 +90,14 @@ Esta falta de datos puede ser causada por muchos motivos:
 4.	**Mediciones en el Intervalo de 0**: En sistemas que toman lecturas en intervalos pequeños (como cada 15 minutos), podría ocurrir que en ciertos momentos el consumo de energía se registre como cero si no se consume energía en ese intervalo exacto.
 5.	Condiciones Específicas de Medición: En algunos sistemas, el medidor de energía puede estar configurado para registrar un valor de cero durante ciertos períodos de inactividad, como cuando no se detecta flujo de energía o cuando los dispositivos monitoreados están apagados temporalmente.
 6.	Reset o Inicialización del Sistema: Si el PLC o el colector de datos se reinicia o se restablece, puede haber momentos en los que los valores se inician en cero hasta que se obtengan nuevas mediciones
+
+**Conclusión:**
+
+De el mapa de calor de valores nulos de data_energy obsevamos varios dispositivos con gran cantidad de valores nulos, y algunos intervalos que todos los dispositivos tienen valores nulos.
+Concluimos que la presencia de valores nulos y ceros en los datos es un comportamiento relativamente común en el sector de la energía en relación con la recopilacion de datos en exteriores . 
+
+En nuestro estudio, hay un 25% de valores nulos no debería influir de manera significativa en los resultados, pero para este estudio , y desde un ponto de vista técnico imputaremos los valores nulos 
+con alguna de las tecnicas aprendidas durante el curso, con las mediciones en ceros en nuetro proyecto en partícular tomamos la decicion de darlos por buenos, recomendamos un estudio posterior imputando valores a los ceros. 
 
 
 **Recomendación:**
