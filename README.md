@@ -78,7 +78,7 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
  
 ![mapa](img/mapa_nulos_data_energy.png)
 
-![nulosyceros](img/fig7nulosyceros.png)
+![nulosyceros](img/fig7nulosyceros.PNG)
 
  
  ![nulos1](img/valores_nulos_porciento.png)
