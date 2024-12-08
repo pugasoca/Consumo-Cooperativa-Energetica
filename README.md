@@ -43,6 +43,7 @@ El conjunto de datos contiene información sobre el consumo eléctrico y datos m
   
 - loureiro_energy.csv:
    El conjunto de datos incluye mediciones de consumo de energía de 172 edificios de una cooperativa Energetica, recopiladas cada 15 minutos mediante medidores inteligentes PLC entre el 05/05/2022 y el 02/09/2023. Consta de 46,608 filas, organizadas por fecha y hora, y presenta columnas para cada edificio, además de una columna de tiempo .  A algunos edificios les faltan entradas, que están marcadas como (NaN).
+  
 ![loureiro_energy.csv](img/fig1.LoureiroDataset.PNG)
 
 Columna 
@@ -77,10 +78,20 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
  
 ![mapa](img/mapa_nulos_data_energy.png)
 
- # Porciento de valores faltantes por dispositivos
+
+ 
  ![nulos1](img/valores_nulos_porciento.png)
  
+ ### Energy Meters con el porciento de valores faltantes con más del 75% de valores nulos:
+ 
+ ['Energy_Meter_38', 'Energy_Meter_46', 'Energy_Meter_7']
 
+
+ 
+ 
+### Energy Meters con más de 34,956/46,608 es decir más el 75 %  valores cero:
+
+['Energy_Meter_122', 'Energy_Meter_102', 'Energy_Meter_21', 'Energy_Meter_121', 'Energy_Meter_156', 'Energy_Meter_68', 'Energy_Meter_57', 'Energy_Meter_83', 'Energy_Meter_133', 'Energy_Meter_72', 'Energy_Meter_113', 'Energy_Meter_144', 'Energy_Meter_137', 'Energy_Meter_140']ispositivos
 
 Esta falta de datos y valores con ceros puede ser causada por muchos motivos: 
 
@@ -93,8 +104,8 @@ Esta falta de datos y valores con ceros puede ser causada por muchos motivos:
 
 **Conclusión:**
 
-De el mapa de calor de valores nulos de data_energy obsevamos varios dispositivos con gran cantidad de valores nulos, y algunos intervalos que todos los dispositivos tienen valores nulos.
-Concluimos que la presencia de valores nulos y ceros en los datos es un comportamiento relativamente común en el sector de la energía en relación con la recopilacion de datos en exteriores . 
+De el mapa de calor de valores nulos de data_energy obsevamos varios dispositivos con gran cantidad de valores nulos, y algunos intervalos de tiempo todos los dispositivos tienen valores nulos.
+Concluimos que la presencia de valores nulos y ceros en los datos es un comportamiento relativamente común en el sector de la energía en relación con la recopilacion de datos en exteriores por los motivios expuestos . 
 
 En nuestro estudio, hay un 25% de valores nulos no debería influir de manera significativa en los resultados, pero para este estudio , y desde un ponto de vista técnico imputaremos los valores nulos 
 con alguna de las tecnicas aprendidas durante el curso, con las mediciones en ceros en nuetro proyecto en partícular tomamos la decicion de darlos por buenos, recomendamos un estudio posterior imputando valores a los ceros. 
