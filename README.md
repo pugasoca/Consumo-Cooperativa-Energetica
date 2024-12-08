@@ -78,9 +78,6 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
  
 ![mapa](img/mapa_nulos_data_energy.png)
 
-
-![nulosyceros](img/fig7nulosyceros.PNG)
-
  
  ![nulos1](img/valores_nulos_porciento.png)
  
@@ -88,12 +85,14 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
  
  ['Energy_Meter_38', 'Energy_Meter_46', 'Energy_Meter_7']
 
-
- 
  
 ### Energy Meters con más de 34,956/46,608 es decir más el 75 %  valores cero:
 
-['Energy_Meter_122', 'Energy_Meter_102', 'Energy_Meter_21', 'Energy_Meter_121', 'Energy_Meter_156', 'Energy_Meter_68', 'Energy_Meter_57', 'Energy_Meter_83', 'Energy_Meter_133', 'Energy_Meter_72', 'Energy_Meter_113', 'Energy_Meter_144', 'Energy_Meter_137', 'Energy_Meter_140']ispositivos
+['Energy_Meter_122', 'Energy_Meter_102', 'Energy_Meter_21', 'Energy_Meter_121', 'Energy_Meter_156', 'Energy_Meter_68', 'Energy_Meter_57', 'Energy_Meter_83', 'Energy_Meter_133', 'Energy_Meter_72', 'Energy_Meter_113', 'Energy_Meter_144', 'Energy_Meter_137', 'Energy_Meter_140']
+
+![nulosyceros](img/fig7nulosyceros.PNG)
+
+
 
 Esta falta de datos y valores con ceros puede ser causada por muchos motivos: 
 
@@ -174,6 +173,8 @@ Lo que sería **100-150 Wh** cada 15 minutos.
 
 En las mañanas y tardes, el consumo suele ser más alto debido al uso de electrodomésticos como lavadoras, secadoras y equipos de cocina.
 
+### Condiciones de las vivienda ( materiales aislantes,ventanas,etc)
+### Condicones meterorologoicas ( Temperatura, viento, incidencia del sol, lluvias ) Están serán motivo de estudios del presente proyecto 
 
 
 
