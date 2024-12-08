@@ -73,14 +73,16 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
 
 ![rango](img/fig5rangofechas.PNG)
 
- ## Identificando problemas como valores faltantes por dispositivos,
-![mapa](img/mapa_nulos_data_energy.PNG)
+ ## Identificando problemas como valores faltantes por dispositivos e interpretación de mediciones con valores cero 
+
  
-# Porciento de valores faltantes por dispositivos
+![mapa](img/mapa_nulos_data_energy.png)
+
+ # Porciento de valores faltantes por dispositivos
  ![nulos1](img/valores_nulos_porciento.png)
  
 **Conclusión:**
-
+De el mapa de calor de vnulos de data_energy obsevamos variois dispositivos con gran cantidad de valores nulos ,al igula que algunos intervalos que todos los dispositivos tienen valores nulos.
 Concluimos que la presencia de valores nulos en los datos es un comportamiento relativamente común en el sector de la energía relacionados con la recopilacion de datos en en exteriores . 
 En nuestro estudio, un 25% de valores nulos no debería influir de manera significativa en los resultados. 
 
