@@ -178,6 +178,6 @@ En las mañanas y tardes, el consumo suele ser más alto debido al uso de electr
 ### Condiciones de las vivienda ( materiales aislantes,ventanas,etc)
 ### Condicones meterorologoicas ( Temperatura, viento, incidencia del sol, lluvias ) Están serán motivo de estudios del presente proyecto 
 
-![nulosyceros](img/fig8tot3nulos.PNG)
+![nulosyceros](img/fig8tot3nulos.png)
 
  
