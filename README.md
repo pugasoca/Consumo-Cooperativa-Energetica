@@ -202,6 +202,11 @@ Hemos segmentado este período para realizar un análisis más detallado, ya que
 
 ![malperio](img/peridomalfunci.png)
 
+Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos y nos quedamos con las mediciones de os 10 PLC (Energy_Meter) con menos valores nulos y con mas valores mayores que cero 
+
+![datawprk](img/datasetespuesdelmergey10plc.png)
+
+
 
 
 
