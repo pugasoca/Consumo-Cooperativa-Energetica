@@ -209,7 +209,9 @@ Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos
 
 ## Mapa de los calor de nuevo dataset 
 
-![datawprk](img/mapa_nulos_new_dataset.PNG)
+![datawprk](img/mapa_nulos_new_dataset.png)
+
+
 
 
 
