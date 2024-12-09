@@ -219,4 +219,13 @@ Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos
 
 ![datawprk](img/series_mensual_modificado.png)
 
+## Se observa que los consumos mensuales de energía presentan un patrón previsible, aumentando durante los meses de verano e invierno, lo que coincide con las variaciones de temperatura características de estas estaciones. Además, se destaca que durante el invierno se registra un incremento en la velocidad del viento, mientras que, a pesar de este fenómeno, el consumo de energía se mantiene elevado.
+
+## En base a estos hallazgos, se recomienda a la comunidad energética considerar la implementación de aerogeneradores, siempre que sea viable económicamente, para aprovechar las condiciones de viento durante estas temporadas. De esta manera, se podría optimizar el uso de energía limpia, contribuyendo tanto al bienestar económico como al ambiental.
+
+![datawprk](img/Energy_Meter_1.png)
+![datawprk](img/Energy_Meter_148.png)
+![datawprk](img/Energy_Meter_17.png)
+![datawprk](img/Energy_Meter_90.png)
+
 
