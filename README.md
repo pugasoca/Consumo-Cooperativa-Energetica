@@ -215,8 +215,8 @@ Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos
 
 ![datawprk](img/distribution_new_datasets.png)
 
+## Consumos Mensuales 
 
-
-
+![datawprk](img/series_mensual_modificado.png)
 
 
