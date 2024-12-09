@@ -211,6 +211,9 @@ Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos
 
 ![datawprk](img/mapa_nulos_new_dataset.png)
 
+## Distribución de Tipos de Valores en new_dataset
+
+![datawprk](img/distribution_new_datasets.png)
 
 
 
