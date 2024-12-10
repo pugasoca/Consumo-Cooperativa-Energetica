@@ -93,7 +93,41 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
 
 ![nulosyceros](img/fig7nulosyceros.PNG)
 
+## Datos meteorológicos locales : está practicamnete todos los datos del total de 46608 
 
+| Column Name | Count of Null Values |
+|---|---|
+| Avg_Temp | 6 |
+| Avg_Rel_Humidity | 6 |
+| Avg_Wind_Direction | 0 |
+| Avg_Wind_Speed | 0 |
+| Max_Inst_Wind_Speed | 0 |
+| Inst_Temp | 5 |
+| Quantity_Precip | 0 |
+| Max_Inst_Precip | 0 |
+| Total_Global_Rad | 5 |
+
+Avg_Rel_Humidity       46602.0
+Avg_Wind_Direction     46608.0
+Avg_Wind_Speed         46608.0
+Max_Inst_Wind_Speed    46608.0
+Inst_Temp              46603.0
+Quantity_Precip        46608.0
+Max_Inst_Precip        46608.0
+Total_Global_Rad       46603.0
+
+Conteo de valores nulos por columna:
+Avg_Temp               6
+Avg_Rel_Humidity       6
+Avg_Wind_Direction     0
+Avg_Wind_Speed         0
+Max_Inst_Wind_Speed    0
+Inst_Temp              5
+Quantity_Precip        0
+Max_Inst_Precip        0
+
+## Todos los valores en 'Avg_Wind_Direction' están dentro del rango de 0 a 360 grados.
+## No se encontraron valores fuera del rango de 0 a 100 en 'Avg_Rel_Humidity'.
 
 Esta falta de datos y valores con ceros puede ser causada por muchos motivos: 
 
@@ -119,7 +153,7 @@ con alguna de las tecnicas aprendidas durante el curso, con las mediciones en ce
 
 Recomendamos realizar el mismo análisis exclusivamente con los PLC (Controladores Lógicos Programables) que hayan recopilado la mayor cantidad de datos. Alternativamente, se considerara la imputación de valores nulos. Esto permitiría mejorar la capacidad para entrenar modelos más precisos y confiables, reduciendo el riesgo de introducir sesgos derivados de la eliminación de datos. De esta manera, el modelo podría basarse en datos más completos y representativos, mejorando la calidad de las predicciones y análisis.
 
-
+### 
 
 # Análisis Exploratorio de Datos (EDA)
 
