@@ -116,18 +116,8 @@ Quantity_Precip        46608.0
 Max_Inst_Precip        46608.0
 Total_Global_Rad       46603.0
 
-Conteo de valores nulos por columna:
-Avg_Temp               6
-Avg_Rel_Humidity       6
-Avg_Wind_Direction     0
-Avg_Wind_Speed         0
-Max_Inst_Wind_Speed    0
-Inst_Temp              5
-Quantity_Precip        0
-Max_Inst_Precip        0
-
-## Todos los valores en 'Avg_Wind_Direction' están dentro del rango de 0 a 360 grados.
-## No se encontraron valores fuera del rango de 0 a 100 en 'Avg_Rel_Humidity'.
+### Todos los valores en 'Avg_Wind_Direction' están dentro del rango de 0 a 360 grados.
+### No se encontraron valores fuera del rango de 0 a 100 en 'Avg_Rel_Humidity'.
 
 Esta falta de datos y valores con ceros puede ser causada por muchos motivos: 
 
@@ -218,7 +208,7 @@ En las mañanas y tardes, el consumo suele ser más alto debido al uso de electr
 ![nulosyceros](img/distribution_of_values.png)
 
 
-Top 3 dispositvos con mayor faltante de datos, debido a cualquier de las razones anteriores pero con en el tiempo vemos algunos siguen funcionando.
+Top 3 disposiitvos con mayor faltante de datos, debido a cualquier de las razones anteriores pero con en el tiempo vemos algunos siguen funcionando.
 
 ![nulosyceros](img/fig8tot3nulos.png)
 
@@ -230,7 +220,7 @@ Del top 5 de dispositivos vemos que hay un período que ninguno registró valore
 
 ### Alanalizamos cuando o no los dispositivos funcionaron 
 
-Observamos que existen algunos momentos específicos (3) en los que ninguno de los dispositivos operó, así como un período significativo entre julio de 2023 y septiembre de 2023 en el que se evidenció una gran fluctuación en su funcionamiento.
+Observamos que existen algunos momentos específicos en los que ninguno de los dispositivos operó, así como un período significativo entre julio de 2023 y septiembre de 2023 en el que se evidenció una gran fluctuación en su funcionamiento.
 
 Hemos segmentado este período para realizar un análisis más detallado, ya que consideramos que este comportamiento anómalo debe ser discutido con los técnicos responsables. No obstante, trataremos este período como un outlier en nuestro análisis principal, pero lo incluiremos en el estudio para garantizar una visión más integral de los datos.
 
