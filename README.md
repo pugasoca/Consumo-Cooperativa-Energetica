@@ -278,7 +278,7 @@ No obteniendo ninguna correlacion siginifivativa entre los valores de consumo,ni
 
 ## Detectar valores atípicos 
 
-Vemos del  grafic
+
 
 ![datawprk](img/boxplots_energy_columns.png)
 
@@ -286,6 +286,6 @@ Vemos del  grafic
 
 ![datawprk](img/boxplots_weather_columns.png) 
 
-![datawprk](img/histograma_weather.png) 
+![datawprk](img/histograma_weather.PNG) 
 
 
