@@ -249,12 +249,11 @@ Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos
   hay un comportamiento similar entre las filas con valores faltantes y sus vecinos más cercanos), 
 - para las columnas con valores de consumo hemos comprobado si existe una fuerte relación lineal entre las variables y un analisis de residuos para ver si es valida la imputación por regresion lineal 
   debido a la gran cantidad de datos y ahorrarnos el coste computacional de  (KNN) . La imputación por regresión implica predecir los valores faltantes en una variable utilizando una regresión de esa 
-  variable sobre otras variables que no tienen valores faltantes, no es el caso poque todas las columnas de ebergia tienen valores faltantes, por lo que investigaremos si hay una 
+  variable sobre otras variables que no tienen valores faltantes, no es el caso poque todas las columnas de energia tienen valores faltantes, por lo que investigaremos si hay una 
   correlaciones significativas entre las variables meteorológicas y las columnas de consumo de energía (por ejemplo, una correlación de 0.7 o superior). No observamos relaciones significativas entre
   las variables de consumo y las meteorologicas para poder usar la imputación por regresion lineal. 
 
-No obteniendo ninguna correlacion siginifivativa entre los valores decidimos tambien imputar los valores nulos de consumo usando metodos basado en KNN pero antes hacemos el escalado de los datos 
-para garantizar que los valores imputados sean consistentes y reflejen patrones reales en las variables.
+No obteniendo ninguna correlacion siginifivativa entre los valores de consumo,ni entre ellos y las , decidimos tambien imputar los valores nulos de consumo usando metodos basado en KNN pero antes hacemos el escalado de los datos para garantizar que los valores imputados sean consistentes y reflejen patrones reales en las variables.
 
 ![datawprk](img/matrizcorrelacion.png)
 
@@ -264,6 +263,7 @@ para garantizar que los valores imputados sean consistentes y reflejen patrones 
 ### Se observa que los consumos mensuales de energía presentan un patrón previsible, aumentando durante los meses de verano e invierno, lo que coincide con las variaciones de temperatura características de estas estaciones. Además, se destaca que durante el invierno se registra un incremento en la velocidad del viento, mientras que, a pesar de este fenómeno, el consumo de energía se mantiene elevado.
 
 ### En base a estos hallazgos, se recomienda a la comunidad energética considerar la implementación de aerogeneradores, siempre que sea viable económicamente, para aprovechar las condiciones de viento durante estas temporadas. De esta manera, se podría optimizar el uso de energía limpia, contribuyendo tanto al bienestar económico como al ambiental.
+
 
 ## Consumos Mensuales 
 ![datawprk](img/Energy_Meter_1.png)
@@ -275,3 +275,7 @@ para garantizar que los valores imputados sean consistentes y reflejen patrones 
 ![datawprk](img/Avg_Wind_Speed.png)
 
 ### En el análisis de Energy_Meter_90, se observa un comportamiento de consumo excesivo y continuo durante los meses de verano. Sin embargo, en invierno, el consumo se mantiene considerablemente bajo. Además, se destaca un apagón (blackout) en los medidores de energía, específicamente al final de junio de 2023, lo que sugiere una posible interrupción en el suministro o un fallo en el sistema de medición.
+
+## Detectar valores atípicos 
+boxplot.png
+![datawprk](img/boxplot.png.png)
