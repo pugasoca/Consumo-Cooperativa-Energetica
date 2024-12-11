@@ -277,5 +277,6 @@ No obteniendo ninguna correlacion siginifivativa entre los valores de consumo,ni
 ### En el análisis de Energy_Meter_90, se observa un comportamiento de consumo excesivo y continuo durante los meses de verano. Sin embargo, en invierno, el consumo se mantiene considerablemente bajo. Además, se destaca un apagón (blackout) en los medidores de energía, específicamente al final de junio de 2023, lo que sugiere una posible interrupción en el suministro o un fallo en el sistema de medición.
 
 ## Detectar valores atípicos 
+![datawprk](img/boxplots_energy_columns.png)
+![datawprk](img/boxplots_weather_columns.png)
 
-![datawprk](img/boxplot.png)
