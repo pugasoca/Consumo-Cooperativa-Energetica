@@ -94,6 +94,16 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
 ![nulosyceros](img/fig7nulosyceros.PNG)
 
 ## Datos meteorológicos locales : está practicamnete todos los datos del total de 46608 
+| Column Name | Count |
+|---|---|
+| Avg_Rel_Humidity | 46602 |
+| Avg_Wind_Direction | 46608 |
+| Avg_Wind_Speed | 46608 |
+| Max_Inst_Wind_Speed | 46608 |
+| Inst_Temp | 46603 |
+| Quantity_Precip | 46608 |
+| Max_Inst_Precip | 46608 |
+| Total_Global_Rad | 46603 |
 
 | Column Name | Count of Null Values |
 |---|---|
@@ -107,14 +117,6 @@ Como se puede observar no existen valores duplicados en ninguno de los dos Datas
 | Max_Inst_Precip | 0 |
 | Total_Global_Rad | 5 |
 
-Avg_Rel_Humidity       46602.0
-Avg_Wind_Direction     46608.0
-Avg_Wind_Speed         46608.0
-Max_Inst_Wind_Speed    46608.0
-Inst_Temp              46603.0
-Quantity_Precip        46608.0
-Max_Inst_Precip        46608.0
-Total_Global_Rad       46603.0
 
 ### Todos los valores en 'Avg_Wind_Direction' están dentro del rango de 0 a 360 grados.
 ### No se encontraron valores fuera del rango de 0 a 100 en 'Avg_Rel_Humidity'.
@@ -208,7 +210,7 @@ En las mañanas y tardes, el consumo suele ser más alto debido al uso de electr
 ![nulosyceros](img/distribution_of_values.png)
 
 
-Top 3 disposiitvos con mayor faltante de datos, debido a cualquier de las razones anteriores pero con en el tiempo vemos algunos siguen funcionando.
+Top 3 dispositvos con mayor faltante de datos, debido a cualquier de las razones anteriores pero con en el tiempo vemos algunos siguen funcionando.
 
 ![nulosyceros](img/fig8tot3nulos.png)
 
@@ -239,7 +241,12 @@ Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos
 
 ![datawprk](img/distribution_new_datasets.png)
 
-## Consumos Mensuales 
+### Para evaluar la correlación entre las columnas de Energy_Meter y las columnas meteorológicas en tu conjunto de datos, y determinar si la regresión lineal
+### es adecuada para imputar los valores nulos o es mejor Métodos basados en vecinos más cercanos (KNN) 
+- parar las columnas con valores meteorologicos utilizamos directamente KNN vecinos por tener pocos valores faltantes, las variables tienen patrones y relaciones claras con otras variables (es decir, si hay un comportamiento similar entre las filas con valores faltantes y sus vecinos más cercanos), 
+- para las columnas con valores de consumo hemos comprobamos si existe una fuerte relación lineal entre las variables.
+
+# Tratamiento de los valores nulos 
 
 ![datawprk](img/series_mensual_modificado.png)
 
@@ -247,6 +254,7 @@ Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos
 
 ### En base a estos hallazgos, se recomienda a la comunidad energética considerar la implementación de aerogeneradores, siempre que sea viable económicamente, para aprovechar las condiciones de viento durante estas temporadas. De esta manera, se podría optimizar el uso de energía limpia, contribuyendo tanto al bienestar económico como al ambiental.
 
+## Consumos Mensuales 
 ![datawprk](img/Energy_Meter_1.png)
 ![datawprk](img/Energy_Meter_148.png)
 ![datawprk](img/Energy_Meter_17.png)
