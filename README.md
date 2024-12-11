@@ -282,7 +282,7 @@ Vemos del  grafic
 
 ![datawprk](img/boxplots_energy_columns.png)
 
-![datawprk](img/histograma_energia.png)
+![datawprk](img/histograma_energia.PNG)
 
 ![datawprk](img/boxplots_weather_columns.png) 
 
