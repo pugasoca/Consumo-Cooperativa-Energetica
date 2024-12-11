@@ -207,8 +207,10 @@ En las mañanas y tardes, el consumo suele ser más alto debido al uso de electr
 
 ## Analisis del comportamiento de los dispositivos 
 
-![nulosyceros](img/distribution_of_values.png)
+![nulosyceros](img/resumen_estadistico_weather.png)
+![nulosyceros](img/resumen_estadistico_energy.png)
 
+![nulosyceros](img/distribution_of_values.png)
 
 Top 3 dispositvos con mayor faltante de datos, debido a cualquier de las razones anteriores pero con en el tiempo vemos algunos siguen funcionando.
 
@@ -237,16 +239,22 @@ Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos
 
 ![datawprk](img/mapa_nulos_new_dataset.png)
 
-## Distribución de Tipos de Valores en new_dataset
+## Distribución de Tipos de Valores en new_dataset 
 
 ![datawprk](img/distribution_new_datasets.png)
 
-### Para evaluar la correlación entre las columnas de Energy_Meter y las columnas meteorológicas en tu conjunto de datos, y determinar si la regresión lineal
-### es adecuada para imputar los valores nulos o es mejor Métodos basados en vecinos más cercanos (KNN) 
-- parar las columnas con valores meteorologicos utilizamos directamente KNN vecinos por tener pocos valores faltantes, las variables tienen patrones y relaciones claras con otras variables (es decir, si hay un comportamiento similar entre las filas con valores faltantes y sus vecinos más cercanos), 
-- para las columnas con valores de consumo hemos comprobamos si existe una fuerte relación lineal entre las variables.
-
 # Tratamiento de los valores nulos 
+
+- para las columnas con valores meteorologicos utilizamos directamente KNN vecinos por tener pocos valores faltantes, las variables tienen patrones y relaciones claras con otras variables (es decir,  
+  hay un comportamiento similar entre las filas con valores faltantes y sus vecinos más cercanos), 
+- para las columnas con valores de consumo hemos comprobado si existe una fuerte relación lineal entre las variables y un analisis de residuos para ver si es valida la imputación por regresion lineal 
+  debido a la gran cantidad de datos y ahorrarnos el coste computacional de  (KNN) . La imputación por regresión implica predecir los valores faltantes en una variable utilizando una regresión de esa 
+  variable sobre otras variables que no tienen valores faltantes, no es el caso poque todas las columnas de ebergia tienen valores faltantes, por lo que investigaremos si hay una 
+  correlaciones significativas entre las variables meteorológicas y las columnas de consumo de energía (por ejemplo, una correlación de 0.7 o superior). No observamos relaciones significativas entre
+  las variables de consumo y las meteorologicas para poder usar la imputación por regresion lineal.
+
+![datawprk](img/matrizcorrelacion.png)
+
 
 ![datawprk](img/series_mensual_modificado.png)
 
