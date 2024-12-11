@@ -281,9 +281,11 @@ No obteniendo ninguna correlacion siginifivativa entre los valores de consumo,ni
 Vemos del  grafic
 
 ![datawprk](img/boxplots_energy_columns.png)
+
 ![datawprk](img/histograma_energia.png)
 
 ![datawprk](img/boxplots_weather_columns.png) 
+
 ![datawprk](img/histograma_weather.png) 
 
 
