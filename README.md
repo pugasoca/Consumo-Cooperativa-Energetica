@@ -276,8 +276,7 @@ No obteniendo ninguna correlacion siginifivativa entre los valores de consumo,ni
 
 ### En el análisis de Energy_Meter_90, se observa un comportamiento de consumo excesivo y continuo durante los meses de verano. Sin embargo, en invierno, el consumo se mantiene considerablemente bajo. Además, se destaca un apagón (blackout) en los medidores de energía, específicamente al final de junio de 2023, lo que sugiere una posible interrupción en el suministro o un fallo en el sistema de medición.
 
-## Detectar valores atípicos 
-
+## Detectar valores atípicos e insights relevantes.
 
 
 ![datawprk](img/boxplots_energy_columns.png)
@@ -287,5 +286,50 @@ No obteniendo ninguna correlacion siginifivativa entre los valores de consumo,ni
 ![datawprk](img/boxplots_weather_columns.png) 
 
 ![datawprk](img/histograma_weather.PNG) 
+
+# Análisis de Gráficos y Resultados
+
+## 1. Consumo Energético
+
+A partir de los gráficos de boxplot e histogramas de los *Energy_Meter*, hemos identificado posibles valores atípicos en el consumo de energía. Por ejemplo, se destacan los datos correspondientes a `Energy_Meter_1` y `Energy_Meter_148`. Es importante evaluar estos valores en detalle, ya que podrían representar:
+
+- Consumos normales para determinadas épocas del año.
+- Variaciones explicadas por condiciones climáticas específicas.
+- Uso ocasional de equipos de alto consumo energético.
+
+La decisión sobre cómo manejar estos valores atípicos dependerá de un análisis más exhaustivo que considere su posible impacto en el análisis global.
+
+## 2. Condiciones Meteorológicas
+
+Los gráficos de las variables meteorológicas muestran que los valores registrados se encuentran mayoritariamente dentro de los rangos esperados. Sin embargo, nos llama la atención:
+
+1. **Falta de precipitación**: No se detectaron precipitaciones durante el período estudiado.
+2. **Altos niveles de radiación global**: Algunas mediciones muestran valores de radiación significativamente por encima de la media.
+
+### Cálculo de la Radiación Global
+
+Utilizando los datos de [Global Solar Atlas](https://globalsolaratlas.info/) para la ubicación de Aveiro, Portugal (40.640496°, -8.653784°), calculamos la radiación global diaria promedio:
+
+\[
+\text{Radiación en KJ/m²/día} = 4681 \, \text{Wh/m²/día} \times 3.6 \, \text{KJ/Wh} = 16,051.6 \, \text{KJ/m²/día}
+\]
+
+Si distribuimos este valor en mediciones cada 15 minutos (96 intervalos diarios):
+
+\[
+\text{Radiación media por intervalo} = \frac{16,051.6 \, \text{KJ/m²/día}}{96} \approx 167.19 \, \text{KJ/m²/intervalo}
+\]
+
+### Factores de Influencia en la Radiación Solar
+
+Los altos valores de radiación observados pueden considerarse reales debido a los siguientes factores:
+
+- **Latitud**: Aveiro, situada a aproximadamente 40°N, recibe una cantidad significativa de radiación solar, especialmente durante los meses de verano.
+- **Estación**: Durante el verano, la inclinación del sol favorece mayores niveles de radiación.
+- **Condiciones meteorológicas**: La radiación puede reducirse por nubes, neblina o lluvia, típicas del otoño e invierno, lo que no parece haber sido el caso en este análisis.
+
+## 3. Recomendaciones
+
+Dado el potencial de radiación solar en Aveiro, sugerimos a la cooperativa la implementación de paneles solares si aún no lo han hecho. Este análisis respalda que la instalación de sistemas de energía solar puede ser una estrategia eficiente para aprovechar la energía renovable y optimizar los recursos energéticos en la región.
 
 
