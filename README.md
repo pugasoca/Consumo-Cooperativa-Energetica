@@ -251,7 +251,10 @@ Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos
   debido a la gran cantidad de datos y ahorrarnos el coste computacional de  (KNN) . La imputación por regresión implica predecir los valores faltantes en una variable utilizando una regresión de esa 
   variable sobre otras variables que no tienen valores faltantes, no es el caso poque todas las columnas de ebergia tienen valores faltantes, por lo que investigaremos si hay una 
   correlaciones significativas entre las variables meteorológicas y las columnas de consumo de energía (por ejemplo, una correlación de 0.7 o superior). No observamos relaciones significativas entre
-  las variables de consumo y las meteorologicas para poder usar la imputación por regresion lineal.
+  las variables de consumo y las meteorologicas para poder usar la imputación por regresion lineal. 
+
+No obteniendo ninguna correlacion siginifivativa entre los valores decidimos tambien imputar los valores nulos de consumo usando metodos basado en KNN pero antes hacemos el escalado de los datos 
+para garantizar que los valores imputados sean consistentes y reflejen patrones reales en las variables.
 
 ![datawprk](img/matrizcorrelacion.png)
 
