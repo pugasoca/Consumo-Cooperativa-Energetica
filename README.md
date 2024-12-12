@@ -321,6 +321,7 @@ Si distribuimos este valor en mediciones cada 15 minutos (96 intervalos diarios)
 \text{Radiación media por intervalo} = \frac{16,051.6 \, \text{KJ/m²/día}}{96} \approx 167.19 \, \text{KJ/m²/intervalo}
 \]
 
+
 ### Factores de Influencia en la Radiación Solar
 
 Los altos valores de radiación observados pueden considerarse reales debido a los siguientes factores:
@@ -332,5 +333,18 @@ Los altos valores de radiación observados pueden considerarse reales debido a l
 ## 3. Recomendaciones
 
 Dado el potencial de radiación solar en Aveiro, sugerimos a la cooperativa la implementación de paneles solares si aún no lo han hecho. Este análisis respalda que la instalación de sistemas de energía solar puede ser una estrategia eficiente para aprovechar la energía renovable y optimizar los recursos energéticos en la región.
+
+# Segmentación Inteligente de los Datos:
+
+![datawprk](img/segmento_estacion.png)
+
+![datawprk](img/segmento_mañana_noche_tarde.PNG)
+
+![datawprk](img/segmento_dias_laborables_vs_fines_de_semana.png) 
+
+![datawprk](img/segmento_consumo_por_condiciones_meteorologicas.PNG) 
+![datawprk](img/segmento_relacion_energy_meter91vsavg_temp.png)
+
+![datawprk](img/segmento_relacion_energy_meter91vsavg_tempboxplot.PNG)
 
 
