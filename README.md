@@ -338,14 +338,14 @@ Dado el potencial de radiación solar en Aveiro, sugerimos a la cooperativa la i
 
 ![datawprk](img/segmento_estacion.png)
 
-![datawprk](img/segmento_mañana_noche_tarde.PNG)
+![datawprk](img/segmento_mañana_noche_tarde.png)
 
 ![datawprk](img/segmento_dias_laborables_vs_fines_de_semana.png) 
 
-![datawprk](img/segmento_consumo_por_condiciones_meteorologicas.PNG) 
+![datawprk](img/segmento_consumo_por_condiciones_meteorologicas.png) 
 
 ![datawprk](img/segmento_relacion_energy_meter91vsavg_temp.png)
 
-![datawprk](img/segmento_relacion_energy_meter91vsavg_tempboxplot.PNG)
+![datawprk](img/segmento_relacion_energy_meter91vsavg_tempboxplot.png)
 
 
