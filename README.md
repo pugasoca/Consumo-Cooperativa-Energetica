@@ -373,7 +373,7 @@ Lo que nos corrobora que son mediciones de viviendas familiares
 ## Análisis de Tendencias nos centramos en el 'Energy_Mete'91 
 
 Este enfoque permite observar las tendencias individuales de cada variable meteorológica y su relación con el consumo energético (Energy_Meter_91), ayudando a identificar los patrones 
-obsevados la influencia de la temperatura y la radiacion solar en ele consumo.
+obsevados,en particular la influencia de la temperatura y la radiacion solar en el consumo.
 
 ![datawprk](img/analisis_tendencias.png)
 
