@@ -339,15 +339,16 @@ Dado el potencial de radiación solar en Aveiro, sugerimos a la cooperativa la i
 # Segmentación Inteligente de los Datos:
 
 Observamos comportamientos interesantes de los diferentes 'Energy_Meter' ,  
-Consumo promedio por estación 
-91,1 consumo muy alto en invierno y otoño, sin embargo, en verano y primavera es bajo 
-132,2,35  y 148 consumo estable durante todo el año
-90 mayor consumo en verano
+### Consumo promedio por estación 
+'Energy_Meter': 91,1 consumo muy alto en invierno y otoño, sin embargo, en verano y primavera es bajo 
+'Energy_Meter': 132,2,35  y 148 consumo estable durante todo el año
+'Energy_Meter': 90 mayor consumo en verano
 
 ![datawprk](img/segmento_estacion.png)
 
 
-Consumo promedio por período del día:  Observamos comportamiento irregular pero la mayoría de ellos sube el consumo durante
+### Consumo promedio por período del día:
+Observamos comportamiento irregular pero la mayoría de ellos sube el consumo durante
 la tarde y la noche algo típico en mediciones de viviendas familiares de gente trabajadora.
 
 ![datawprk](img/segmento_mañana_noche_tarde.png)
@@ -365,11 +366,16 @@ Lo que nos corrobora que son mediciones de viviendas familiares
 
 ![datawprk](img/segmento_relacion_energy_meter91vsavg_tempboxplot.png)
 
-## De la matriz de correlación ya con los datos sin valores nulos no observamos fuertes correlaciones entre las variables meteorológicas y el consumo, destaca un poco el 'Energy_Meter'  91 . La conclusión más importante que obtenemos no es la magnitud de la correlación, sino el signo vemos como la temperatura afecta el consumo inversamente, al igual que el resto de variables meteorológicas exceptuando las relacionadas con la lluvia, esto puede ser debido a la poca lluvia en el período analizado. Vemos también que la 'Avg_Rel_Humidity' como era lógico tiene una correlación con 'Total_Global_Rad'
+## De la matriz de correlación ya con los datos sin valores nulos no observamos fuertes correlaciones entre las variables meteorológicas y el consumo, destaca un poco el 'Energy_Meter'  91 . La conclusión más importante que obtenemos no es la magnitud de la correlación, sino el signo vemos como la temperatura afecta el consumo inversamente, al igual que el resto de variables meteorológicas exceptuando las relacionadas con la lluvia, esto puede ser debido a la poca lluvia en el período analizado. Vemos también que 'Avg_Rel_Humidity', 'Avg_Temp' como era lógico tiene una correlación con 'Total_Global_Rad'
 
 ![datawprk](img/matrizcorrelacionfinal.png)
 
+## Análisis de Tendencias nos centramos en el 'Energy_Mete'91 
 
+Este enfoque permite observar las tendencias individuales de cada variable meteorológica y su relación con el consumo energético (Energy_Meter_91), ayudando a identificar patrones 
+obsevados de la temperatura y la radiacion solar.
+
+![datawprk](img/analisis_tendencias.png)
 
 
 
