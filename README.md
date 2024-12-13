@@ -255,6 +255,8 @@ Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos
 
 No obteniendo ninguna correlacion siginifivativa entre los valores de consumo,ni entre ellos y las , decidimos tambien imputar los valores nulos de consumo usando metodos basado en KNN pero antes hacemos el escalado de los datos para garantizar que los valores imputados sean consistentes y reflejen patrones reales en las variables.
 
+## Matriz correlacion solo con datos de Wheather sin nulos
+
 ![datawprk](img/matrizcorrelacion.png)
 
 
@@ -336,16 +338,41 @@ Dado el potencial de radiación solar en Aveiro, sugerimos a la cooperativa la i
 
 # Segmentación Inteligente de los Datos:
 
+Observamos comportamientos interesantes de los diferentes 'Energy_Meter' ,  
+Consumo promedio por estación 
+91,1 consumo muy alto en invierno y otoño, sin embargo, en verano y primavera es bajo 
+132,2,35  y 148 consumo estable durante todo el año
+90 mayor consumo en verano
+
 ![datawprk](img/segmento_estacion.png)
 
+
+Consumo promedio por período del día:  Observamos comportamiento irregular pero la mayoría de ellos sube el consumo durante
+la tarde y la noche algo típico en mediciones de viviendas familiares de gente trabajadora.
+
 ![datawprk](img/segmento_mañana_noche_tarde.png)
+
+Con el promedio del consumo de fin de semana observamos que casi todos los Energy_Meter registran mayor consumo los fines de semana
+Lo que nos corrobora que son mediciones de viviendas familiares 
 
 ![datawprk](img/segmento_dias_laborables_vs_fines_de_semana.png) 
 
 ![datawprk](img/segmento_consumo_por_condiciones_meteorologicas.png) 
 
+## Relaciones entre las variables de consumo y meteorológicas.
+
 ![datawprk](img/segmento_relacion_energy_meter91vsavg_temp.png)
 
 ![datawprk](img/segmento_relacion_energy_meter91vsavg_tempboxplot.png)
+
+## De la matriz de correlación ya con los datos sin valores nulos no observamos fuertes correlaciones entre las variables meteorológicas y el consumo, destaca un poco el 'Energy_Meter'  91 . La conclusión más importante que obtenemos no es la magnitud de la correlación, sino el signo vemos como la temperatura afecta el consumo inversamente, al igual que el resto de variables meteorológicas exceptuando las relacionadas con la lluvia, esto puede ser debido a la poca lluvia en el período analizado. Vemos también que la 'Avg_Rel_Humidity' como era lógico tiene una correlación con 'Total_Global_Rad'
+
+![datawprk](img/matrizcorrelacionfinal.png)
+
+
+
+
+
+
 
 
