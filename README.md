@@ -377,6 +377,19 @@ obsevados,en particular la influencia de la temperatura y la radiacion solar en 
 
 ![datawprk](img/analisis_tendencias.png)
 
+# Análisis de Cohortes
+
+Para hacer el Análisis de Cohortes hemos trasformado el dataset  creando uno nuevas con columnas  
+Energy_Meter para los diferentes PLC,
+Daily_Consumption para la suma del consumo diario por PLC 
+Mantenemos las columnas de Wheather que tenga lógica aplicar a sus valores  las respectivas  medias diarias
+Time los días, 
+Resultado de 4860 valores los 486 días del intervalo de datos multiplicado por los 10 PLC .
+
+Estas cohortes están diseñadas para responder preguntas claves y generar insights sobre patrones de consumo y comportamiento de los medidores de energía (Energy_Meters).
+Para nuestro objetivo de analizar el comportamiento del consumo de la cooperativa energética hemos creado una columna **Cohorte con la fecha del primer consumo energético superior a 15 kWh.**
+
+![datawprk](img/transformed_daily_data.PNG)
 
 
 
