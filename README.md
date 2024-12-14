@@ -402,11 +402,12 @@ Para nuestro objetivo de analizar el comportamiento del consumo de la cooperativ
 
 ### Métricas observadas: 
 Numeros de Energy_meter en cada cohorte
-'Energy_Meter_2' , 'Energy_Meter_118', 'Energy_Meter_1', empezaron a sobrepasar el consumo de un Hogar Eficiente en invierno
- 'Energy_Meter_35' y 'Energy_Meter_148' nunca sobrepasaron los 15 kwh 
-'Energy_Meter_108', 'Energy_Meter_91', 'Energy_Meter_132', empezaron a sobrepasar el consumo de un Hogar Eficiente en primavera
-'Energy_Meter_90', 'Energy_Meter_17', empezaron a sobrepasar el consumo de un Hogar Eficiente en verano
-Conclusión: 
+- 'Energy_Meter_2' , 'Energy_Meter_118', 'Energy_Meter_1', empezaron a sobrepasar el consumo de un Hogar Eficiente en invierno
+- 'Energy_Meter_35' y 'Energy_Meter_148' nunca sobrepasaron los 15 kwh 
+- 'Energy_Meter_108', 'Energy_Meter_91', 'Energy_Meter_132', empezaron a sobrepasar el consumo de un Hogar Eficiente en primavera
+- 'Energy_Meter_90', 'Energy_Meter_17', empezaron a sobrepasar el consumo de un Hogar Eficiente en verano
+
+### Conclusión: 
 En los 10 Energy_meter estudiados, vemos que su primer consumo fuera de rango de Hogar Eficiente Energéticamente pude ser en cualquier época de año menos en Otoño, también recomendamos estudiar en detalle el comportamiento de los hogares que fueron medidos con 'Energy_Meter_35' y 'Energy_Meter_148'  para replicar sus medidas diferenciales de aprovechamiento energético en los demás hogares en función de las necesidades energéticas de cada uno. 
 
 
