@@ -395,5 +395,5 @@ Para nuestro objetivo de analizar el comportamiento del consumo de la cooperativ
 
 
 
-
+![datawprk](img/mes_cohorte_masde15.png)
 
