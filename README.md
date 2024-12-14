@@ -393,7 +393,21 @@ Para nuestro objetivo de analizar el comportamiento del consumo de la cooperativ
 
 ![datawprk](img/datasetes_cohorte.PNG)
 
-
+### Objetivo:
+ - Identificar patrones estacionales o períodos clave en los que los medidores alcanzaron su primer uso significativo más de 15 kwh.
+ - Detectar zonas o clientes de alto o bajo consumo para ofrecer estrategias de optimización energética.
+ - ¿Existe alguna tendencia en el consumo inicial relacionada con la estación del año?
 
 ![datawprk](img/mes_cohorte_masde15.png)
+
+### Métricas observadas: 
+Numeros de Energy_meter en cada cohorte
+'Energy_Meter_2' , 'Energy_Meter_118', 'Energy_Meter_1', empezaron a sobrepasar el consumo de un Hogar Eficiente en invierno
+ 'Energy_Meter_35' y 'Energy_Meter_148' nunca sobrepasaron los 15 kwh 
+'Energy_Meter_108', 'Energy_Meter_91', 'Energy_Meter_132', empezaron a sobrepasar el consumo de un Hogar Eficiente en primavera
+'Energy_Meter_90', 'Energy_Meter_17', empezaron a sobrepasar el consumo de un Hogar Eficiente en verano
+Conclusión: 
+En los 10 Energy_meter estudiados, vemos que su primer consumo fuera de rango de Hogar Eficiente Energéticamente pude ser en cualquier época de año menos en Otoño, también recomendamos estudiar en detalle el comportamiento de los hogares que fueron medidos con 'Energy_Meter_35' y 'Energy_Meter_148'  para replicar sus medidas diferenciales de aprovechamiento energético en los demás hogares en función de las necesidades energéticas de cada uno. 
+
+
 
