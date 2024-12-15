@@ -389,7 +389,8 @@ Resultado de 4860 valores los 486 días del intervalo de datos multiplicado por 
 ![datawprk](img/transformed_daily_data.PNG)
 
 Aplicamos cohortes para responder preguntas claves y generar insights sobre patrones de consumo y comportamiento de los medidores de energía (Energy_Meters).
-Para nuestro objetivo de analizar el comportamiento del consumo de la cooperativa energética hemos creado una columna **Cohorte con la fecha del primer consumo energético superior a 15 kWh.**
+Para nuestro objetivo de analizar el comportamiento del consumo de la cooperativa energética hemos creado una columna **Cohorte con la fecha del primer consumo energético superior a 15 kWh.** para
+cadaEnergy_Meters.
 
 ![datawprk](img/datasetes_cohorte.PNG)
 
@@ -410,5 +411,21 @@ Numeros de Energy_meter en cada cohorte
 ### Conclusión: 
 En los 10 Energy_meter estudiados, vemos que su primer consumo fuera de rango de Hogar Eficiente Energéticamente pude ser en cualquier época de año menos en Otoño, también recomendamos estudiar en detalle el comportamiento de los hogares que fueron medidos con 'Energy_Meter_35' y 'Energy_Meter_148'  para replicar sus medidas diferenciales de aprovechamiento energético en los demás hogares en función de las necesidades energéticas de cada uno. 
 
+### Calculamos la temperatura en cada cohorte 
+
+## Temperatura Promedio en el Día que Daily_Consumption > 15 por Energy_Meter
+
+A continuación se muestra la temperatura promedio (`Cohorte_Avg_Temp`) para cada medidor de energía (`Energy_Meter`) en el día en que `Daily_Consumption` superó 15:
+
+| Energy_Meter   | Time       | Cohorte_Avg_Temp |
+|----------------|------------|------------------|
+| Energy_Meter_1 | 2022-12-29 | 15.74            |
+| Energy_Meter_108 | 2022-05-08 | 17.93          |
+| Energy_Meter_118 | 2022-12-25 | 14.42          |
+| Energy_Meter_132 | 2022-05-06 | 15.46          |
+| Energy_Meter_17  | 2022-06-01 | 19.68          |
+| Energy_Meter_2  | 2023-01-30 | 8.74            |
+| Energy_Meter_90 | 2022-07-09 | 24.30           |
+| Energy_Meter_91 | 2022-05-31 | 20.43           |
 
 
