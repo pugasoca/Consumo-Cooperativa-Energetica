@@ -390,12 +390,12 @@ Resultado de 4860 valores los 486 días del intervalo de datos multiplicado por 
 
 Aplicamos cohortes para responder preguntas claves y generar insights sobre patrones de consumo y comportamiento de los medidores de energía (Energy_Meters).
 Para nuestro objetivo de analizar el comportamiento del consumo de la cooperativa energética hemos creado una columna **Cohorte con la fecha del primer consumo energético superior a 15 kWh.** para
-cadaEnergy_Meters.
+cada Energy_Meters.
 
 ![datawprk](img/datasetes_cohorte.PNG)
 
 ### Objetivo:
- - Identificar patrones estacionales o períodos clave en los que los medidores alcanzaron su primer uso significativo más de 15 kwh.
+ - Identificar patrones estacionales o períodos clave en los que los medidores alcanzaron su primer uso significativo más de 15 kwh( No comportandoce como un Hogar Eficiente 10 -15 kwh)
  - Detectar zonas o clientes de alto o bajo consumo para ofrecer estrategias de optimización energética.
  - ¿Existe alguna tendencia en el consumo inicial relacionada con la estación del año?
 
