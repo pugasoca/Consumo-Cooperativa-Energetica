@@ -413,10 +413,9 @@ En los 10 Energy_meter estudiados, vemos que su primer consumo fuera de rango de
 
 ### Calculamos la temperatura en cada cohorte 
 
-## Temperatura Promedio en el Día que Daily_Consumption > 15 por Energy_Meter
+## Temperatura (`Cohorte_Avg_Temp`) para cada medidor de energía (`Energy_Meter`) en el día en que `Daily_Consumption` superó 15 kwh:
 
-A continuación se muestra la temperatura promedio (`Cohorte_Avg_Temp`) para cada medidor de energía (`Energy_Meter`) en el día en que `Daily_Consumption` superó 15:
-
+A continuación se muestra la temperatura promedio 
 | Energy_Meter   | Time       | Cohorte_Avg_Temp |
 |----------------|------------|------------------|
 | Energy_Meter_1 | 2022-12-29 | 15.74            |
@@ -428,4 +427,6 @@ A continuación se muestra la temperatura promedio (`Cohorte_Avg_Temp`) para cad
 | Energy_Meter_90 | 2022-07-09 | 24.30           |
 | Energy_Meter_91 | 2022-05-31 | 20.43           |
 
+![datawprk](img/temp_cohorte15.png)
 
+![datawprk](img/temp_cohorte15estacion.png)
