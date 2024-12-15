@@ -411,9 +411,9 @@ Numeros de Energy_meter en cada cohorte
 ### Conclusión: 
 En los 10 Energy_meter estudiados, vemos que su primer consumo fuera de rango de Hogar Eficiente Energéticamente pude ser en cualquier época de año menos en Otoño, también recomendamos estudiar en detalle el comportamiento de los hogares que fueron medidos con 'Energy_Meter_35' y 'Energy_Meter_148'  para replicar sus medidas diferenciales de aprovechamiento energético en los demás hogares en función de las necesidades energéticas de cada uno. 
 
-### Calculamos la temperatura en cada cohorte 
+## Calculamos la temperatura en cada cohorte 
 
-## Temperatura (`Cohorte_Avg_Temp`) para cada medidor de energía (`Energy_Meter`) en el día en que `Daily_Consumption` superó 15 kwh:
+### Temperatura (`Cohorte_Avg_Temp`) para cada medidor de energía (`Energy_Meter`) en el día en que `Daily_Consumption` superó 15 kwh:
 
 A continuación se muestra la temperatura promedio 
 | Energy_Meter   | Time       | Cohorte_Avg_Temp |
@@ -430,3 +430,6 @@ A continuación se muestra la temperatura promedio
 ![datawprk](img/temp_cohorte15.png)
 
 ![datawprk](img/temp_cohorte15estacion.png)
+
+### Conclusión: Observamos que los Energy_Meter empezaron a comportarse con un cosumo distinto a un Hogar Eficiente idependientemente de al estacion del año.
+
