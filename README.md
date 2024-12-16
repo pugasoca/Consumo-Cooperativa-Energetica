@@ -1,5 +1,5 @@
 ## Proyecto 3  Curso Data Scientist  UOC 2024 
-https://github.com/users/pugasoca/projects/1?pane=issue&itemId=89559047
+https://github.com/users/pugasoca/projects/1
 
 **Descripipción:** Consumo Energía Eléctricade cooperativa energética.
 
