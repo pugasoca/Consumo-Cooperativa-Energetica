@@ -433,3 +433,15 @@ A continuación se muestra la temperatura promedio
 
 ### Conclusión: Observamos que los Energy_Meter empezaron a comportarse con un cosumo distinto a un Hogar Eficiente idependientemente de al estacion del año.
 
+### Matriz de retención 
+
+Tasa de retencion = Energy_Meter_Activos / Energy_Meter_Inicial
+
+Nos ayuda a entender cómo se comportan los Energy Meters a lo largo del tiempo después de su primer consumo mayor de 15 kwh:
+Obervamos 
+
+![datawprk](img/matriztasaretencion.png)
+
+
+
+
