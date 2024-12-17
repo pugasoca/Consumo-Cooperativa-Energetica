@@ -400,6 +400,17 @@ cada Energy_Meters.
  - Detectar zonas o clientes de alto o bajo consumo para ofrecer estrategias de optimización energética.
  - ¿Existe alguna tendencia en el consumo inicial relacionada con la estación del año?
 
+| Cohorte   | Energy_Meters_List |
+|-----------|--------------------|
+| 2022-05   | Energy_Meter_108   |
+| 2022-05   | Energy_Meter_132   |
+| 2022-05   | Energy_Meter_91    |
+| 2022-06   | Energy_Meter_17    |
+| 2022-07   | Energy_Meter_90    |
+| 2022-12   | Energy_Meter_1     |
+| 2022-12   | Energy_Meter_118   |
+| 2023-01   | Energy_Meter_2     |
+
 
 ## Matriz de retención 
 
@@ -424,6 +435,13 @@ La tasa de retención en este caso podría interpretarse como la proporción de 
 
 **Monto Promedio del consumo Cohorte y Mes**
 
+Suma total de Daily_Consumption / Número de Energy Meters activos en ese periodo 
+
+Estacionalidad: Observar si el monto promedio del consumo está influenciado por la época del año (verano/invierno) en algunos medidores esta pasando
+
 ![datawprk](img/Promedio_Consumo.png)
 
+**Temperatura Promedio**
+
+![datawprk](img/Promedio_Consumo.png)
 
