@@ -392,6 +392,7 @@ Aplicamos cohortes para responder preguntas claves y generar insights sobre patr
 Para nuestro objetivo de analizar el comportamiento del consumo de la cooperativa energética hemos creado una columna **Cohorte con la fecha del primer consumo energético superior a 15 kWh.** para
 cada Energy_Meters.
 
+
 ![datawprk](img/datasetes_cohorte.PNG)
 
 ### Objetivo:
@@ -401,44 +402,21 @@ cada Energy_Meters.
 
 ![datawprk](img/mes_cohorte_masde15.png)
 
-### Métricas observadas: 
-Numeros de Energy_meter en cada cohorte
-- 'Energy_Meter_2' , 'Energy_Meter_118', 'Energy_Meter_1', empezaron a sobrepasar el consumo de un Hogar Eficiente en invierno
-- 'Energy_Meter_35' y 'Energy_Meter_148' nunca sobrepasaron los 15 kwh 
-- 'Energy_Meter_108', 'Energy_Meter_91', 'Energy_Meter_132', empezaron a sobrepasar el consumo de un Hogar Eficiente en primavera
-- 'Energy_Meter_90', 'Energy_Meter_17', empezaron a sobrepasar el consumo de un Hogar Eficiente en verano
 
-### Conclusión: 
-En los 10 Energy_meter estudiados, vemos que su primer consumo fuera de rango de Hogar Eficiente Energéticamente pude ser en cualquier época de año menos en Otoño, también recomendamos estudiar en detalle el comportamiento de los hogares que fueron medidos con 'Energy_Meter_35' y 'Energy_Meter_148'  para replicar sus medidas diferenciales de aprovechamiento energético en los demás hogares en función de las necesidades energéticas de cada uno. 
-
-## Calculamos la temperatura en cada cohorte 
-
-### Temperatura (`Cohorte_Avg_Temp`) para cada medidor de energía (`Energy_Meter`) en el día en que `Daily_Consumption` superó 15 kwh:
-
-A continuación se muestra la temperatura promedio 
-| Energy_Meter   | Time       | Cohorte_Avg_Temp |
-|----------------|------------|------------------|
-| Energy_Meter_1 | 2022-12-29 | 15.74            |
-| Energy_Meter_108 | 2022-05-08 | 17.93          |
-| Energy_Meter_118 | 2022-12-25 | 14.42          |
-| Energy_Meter_132 | 2022-05-06 | 15.46          |
-| Energy_Meter_17  | 2022-06-01 | 19.68          |
-| Energy_Meter_2  | 2023-01-30 | 8.74            |
-| Energy_Meter_90 | 2022-07-09 | 24.30           |
-| Energy_Meter_91 | 2022-05-31 | 20.43           |
-
-![datawprk](img/temp_cohorte15.png)
-
-![datawprk](img/temp_cohorte15estacion.png)
-
-### Conclusión: Observamos que los Energy_Meter empezaron a comportarse con un cosumo distinto a un Hogar Eficiente idependientemente de al estacion del año.
-
-### Matriz de retención 
+## Matriz de retención 
 
 Tasa de retencion = Energy_Meter_Activos / Energy_Meter_Inicial
+Nos ayuda a entender cómo se comportan los Energy Meters a lo largo del tiempo después cohorte Inicial:
+La tasa de retención en este caso podría interpretarse como la proporción de medidores de energía (Energy_Meter) que continuaron registrando un consumo de más de 15 kWh en meses posteriores, en relación con los que comenzaron con este nivel de consumo en su mes de cohorte inicial.
 
-Nos ayuda a entender cómo se comportan los Energy Meters a lo largo del tiempo después de su primer consumo mayor de 15 kwh:
-Obervamos 
+### Interpretación:
+
+**Alto porcentaje de retención:** Si la tasa de retención es alta (por ejemplo, 80-90%), significa que la mayoría de los medidores que comenzaron con un consumo inicial alto (>15 kWh) continúan en este rango de consumo en los meses posteriores.
+**Bajo porcentaje de retención:** Si la tasa de retención disminuye rápidamente en los meses siguientes, esto indica que muchos medidores que inicialmente tenían un alto consumo (>15 kWh) no mantuvieron este nivel de uso en el tiempo.
+Insights posibles:
+
+Patrones de consumo estacional: Un bajo nivel de retención podría ser un indicador de patrones de consumo estacionales, donde el consumo inicial >15 kWh ocurrió durante meses específicos (por ejemplo, verano o invierno), pero no se mantuvo en otros meses.
+Impacto de eventos externos: Cambios en la retención podrían estar relacionados con eventos externos, como cambios en tarifas eléctricas, condiciones climáticas o programas de eficiencia energética. 
 
 ![datawprk](img/Tasa_retencion.png)
 
