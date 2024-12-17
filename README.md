@@ -508,14 +508,30 @@ Las diferencias entre los puntajes R² de entrenamiento y prueba y el hecho de q
 Hemos usado más características y combinaciones entre ellas y la selección de los datos de entrenamiento y prueba y no me hemos logrado un mejor ajuste de las métricas. Por lo que probaremos con un modelo polinómico
 luego de probar con diferentes grados y diferentes distribución de entrenamiento y prueba  mejoran muy poco las métricas del modelo en cuanto a R² , pero el RMSE alto. 
 
-Train: (388, 3), Test: (98, 3)
-Train RMSE: 0.40, R²: 0.31
-Test RMSE: 0.50, R²: 0.15
+## Resultados del Modelo Polinómico
 
-Implementamos un pipeline en Scikit-learn que encadena varias transformaciones y un modelo de regresión lineal, y luego  una búsqueda usando (Grid Search) para encontrar el mejor grado del polinomio en un modelo de regresión polinómica. Buscamos encontrar el mejor grado de polinomio (entre 1 y 4) para un modelo de regresión lineal sobre un conjunto de datos transformado polinómicamente. Utiliza una validación cruzada de 5 pliegues para evaluar el desempeño de los modelos con diferentes grados de polinomio y selecciona el que tiene el mejor R².
+### Descripción del Proceso
+Implementamos un **pipeline** en Scikit-learn que encadena varias transformaciones y un modelo de **regresión lineal**, seguido de una búsqueda de hiperparámetros mediante **Grid Search**. El objetivo es encontrar el **mejor grado del polinomio** (entre 1 y 4) para un modelo de regresión lineal sobre un conjunto de datos transformado polinómicamente.
 
-Train: (388, 3), Test: (98, 3)
-Train RMSE: 0.40, R²: 0.31
-Test RMSE: 0.50, R²: 0.15
-Mejores hiperparámetros: {'poly__degree': 1}
-Mejor R² obtenido: 0.25
+Se utilizó una **validación cruzada** de 5 pliegues para evaluar el desempeño del modelo con diferentes grados de polinomio y seleccionar el que optimiza el puntaje **R²**.
+
+---
+
+### Métricas de Desempeño
+
+| Conjunto       | Tamaño      | RMSE  | R²   |
+|----------------|-------------|-------|------|
+| **Train**      | (388, 3)    | 0.40  | 0.31 |
+| **Test**       | (98, 3)     | 0.50  | 0.15 |
+
+---
+
+### Resultados de la Búsqueda de Hiperparámetros
+
+- **Mejores hiperparámetros**: `{'poly__degree': 1}`
+- **Mejor R² obtenido (validación cruzada)**: `0.25`
+
+---
+
+### Conclusiones
+El mejor grado de polinomio encontrado fue **1**, lo cual indica que un modelo lineal es suficiente para estos datos y no se observa una mejora significativa al incrementar la complejidad del modelo polinómico.
