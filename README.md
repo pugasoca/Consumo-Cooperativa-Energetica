@@ -454,63 +454,58 @@ Intentamos buscar un buen modelo para Predecir los valores del consumo de Energy
 y estos son los resultados
 
 
----
+### Resultados del Modelo
 
-### Resultados de Validación Cruzada
+#### Dimensiones del conjunto de datos
+- **Conjunto de entrenamiento**: `(379, 2), (379,)`
+- **Conjunto de prueba**: `(95, 2), (95,)`
 
-| Metric | Mean | Std  |
-|--------|------|------|
-|   R²   | 0.32 | 0.08 |
-|   MSE  | 0.16 | 0.02 |
+#### Resultados de validación cruzada:
+| Métrica | Media | Desviación Estándar |
+| ------- | ----- | ------------------- |
+| **R²**  | `0.30` | `0.08`              |
+| **MSE** | `0.14` | `0.03`              |
 
----
+#### Parámetros del Modelo:
+- **Intercepto**: `3.7274900437191403`
+- **Coeficientes**: `[0.01785278, 0.03545932]`
 
-### Parámetros del Modelo
+#### Desempeño del Modelo:
+- **Puntaje R² en el conjunto de entrenamiento**: `0.3044650908676023`
+- **Puntaje R² en el conjunto de prueba**: `0.21325719984298808`
+- **MSE en el conjunto de entrenamiento**: `0.14047093868661498`
+- **MSE en el conjunto de prueba**: `0.14684288505791646`
 
-- **Intercepto**: `3.7551267508837767`  
-- **Coeficiente**: `[0.00246885, 0.04968336]`
+#### Comparación de los primeros 20 valores entre el valor real y el valor predicho:
 
----
-
-### Desempeño del Modelo
-
-- **Puntaje R² en el conjunto de entrenamiento**: `0.3426562978062938`  
-- **Puntaje R² en el conjunto de prueba**: `0.11861934633834936`  
-- **MSE en el conjunto de entrenamiento**: `0.15307869724863796`  
-- **MSE en el conjunto de prueba**: `0.1285249439417473`
-
----
-
-### Comparación de los Primeros 20 Valores (Valor Real vs Valor Predicho)
-
-|   #   | Valor Real | Valor Predicho |
-|-------|------------|---------------|
-|   0   |    3.80    |     4.24      |
-|   1   |    3.75    |     4.32      |
-|   2   |    3.95    |     4.38      |
-|   3   |    4.22    |     4.46      |
-|   4   |    4.32    |     4.50      |
-|   5   |    4.53    |     4.53      |
-|   6   |    4.50    |     4.57      |
-|   7   |    4.99    |     4.58      |
-|   8   |    4.72    |     4.60      |
-|   9   |    4.21    |     4.59      |
-|  10   |    4.63    |     4.54      |
-|  11   |    4.61    |     4.52      |
-|  12   |    4.00    |     4.50      |
-|  13   |    4.19    |     4.52      |
-|  14   |    3.96    |     4.53      |
-|  15   |    5.13    |     4.53      |
-|  16   |    4.75    |     4.53      |
-|  17   |    4.12    |     4.52      |
-|  18   |    4.64    |     4.55      |
-|  19   |    4.50    |     4.55      |
+| Índice | Valor Real | Valor Predicho |
+| ------ | ---------- | -------------- |
+| 0      | `4.72`     | `5.05`         |
+| 1      | `5.28`     | `5.02`         |
+| 2      | `4.41`     | `4.83`         |
+| 3      | `5.21`     | `4.91`         |
+| 4      | `5.21`     | `4.96`         |
+| 5      | `5.25`     | `4.89`         |
+| 6      | `5.05`     | `5.06`         |
+| 7      | `4.58`     | `4.41`         |
+| 8      | `4.68`     | `5.09`         |
+| 9      | `5.49`     | `4.85`         |
+| 10     | `4.74`     | `5.00`         |
+| 11     | `5.48`     | `4.95`         |
+| 12     | `4.12`     | `4.49`         |
+| 13     | `4.42`     | `4.54`         |
+| 14     | `4.52`     | `4.67`         |
+| 15     | `5.47`     | `5.00`         |
+| 16     | `4.92`     | `4.96`         |
+| 17     | `5.88`     | `5.01`         |
+| 18     | `4.72`     | `4.91`         |
+| 19     | `5.35`     | `5.08`         |
 
 
 El modelo de regresión lineal tiene un desempeño moderado, con una capacidad limitada para predecir el consumo de energía en el conjunto de prueba. El bajo valor de R² en ambos conjuntos sugiere que los predictores actuales (temperaturas promedio e instantáneas.) no explican de manera óptima las variaciones en el consumo de energía.
 Las diferencias entre los puntajes R² de entrenamiento y prueba y el hecho de que los valores de R² sean relativamente bajos indican que el modelo podría necesitar más características o ajustes para mejorar su desempeño, como la inclusión de más variables, la revisión de los datos para detectar patrones adicionales, o el uso de otros modelos más complejos.
 
-Hemos usado más características y combinaciones entre ellas y el escoger los datos de entrenamiento y prueba y no me hemos logrado un mejor ajuste de las metricas. Por lo que probaremos con un modelo polinomico
+Hemos usado más características y combinaciones entre ellas y la selección de los datos de entrenamiento y prueba y no me hemos logrado un mejor ajuste de las metricas. Por lo que probaremos con un modelo polinomico
 
 
 
