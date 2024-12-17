@@ -440,7 +440,7 @@ Tasa de retencion = Energy_Meter_Activos / Energy_Meter_Inicial
 Nos ayuda a entender cómo se comportan los Energy Meters a lo largo del tiempo después de su primer consumo mayor de 15 kwh:
 Obervamos 
 
-![datawprk](img/matriztasaretencion.png)
+![datawprk](img/Tasa_retencion.png)
 
 
 
