@@ -661,7 +661,7 @@ Desde una perspectiva personal  el proyecto permitió aplicar con éxito los con
 - Creación de modelos de aprendizaje capaces de predecir el consumo energético futuro.
 - Generación de resultados aplicables tanto para consumidores como para la planificación energética.
 
-### TO DO
+### TO DO:
 
 - Modelos de Clasificación :Desarrollar y optimizar modelos de clasificación (como árboles de decisión, SVM, k-NN
 - Ampliar sobre Validación de Modelos
