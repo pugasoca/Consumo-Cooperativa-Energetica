@@ -428,7 +428,7 @@ La tasa de retención en este caso podría interpretarse como la proporción de 
 
 **Patrones de consumo estacional:** Un bajo nivel de retención podría ser un indicador de patrones de consumo estacionales, donde el consumo inicial >15 kWh ocurrió durante meses específicos (por ejemplo, verano o invierno), pero no se mantuvo en otros meses.
 
-
+kwh 
 **Impacto de eventos externos:** Cambios en la retención podrían estar relacionados con eventos externos, condiciones climáticas o programas de eficiencia energética. 
 
 ![datawprk](img/Tasa_retencion.png)
@@ -444,4 +444,73 @@ Estacionalidad: Observar si el monto promedio del consumo está influenciado por
 **Temperatura Promedio**
 
 ![datawprk](img/Promedio_Temperatura.png)
+
+**Modelos de Regresión Regularizados** 
+
+Del análisis de cohortes como complemento a la matriz de correlación vemos que el Energy_meter35 nunca alcanzo consumir mas de 15 kwh , Energy_meter 91 mantuvo un consumo elevado durante todo el año, con poca fluctuación respecto a la temperatura.
+
+Intentamos buscar un buen modelo para Predecir los valores del consumo de Energy_meter 91 usando como variables predictoras :  selected_features= ['Avg_Temp','Inst_Temp']
+
+y estos son los resultados
+
+
+---
+
+### Resultados de Validación Cruzada
+
+| Metric | Mean | Std  |
+|--------|------|------|
+|   R²   | 0.32 | 0.08 |
+|   MSE  | 0.16 | 0.02 |
+
+---
+
+### Parámetros del Modelo
+
+- **Intercepto**: `3.7551267508837767`  
+- **Coeficiente**: `[0.00246885, 0.04968336]`
+
+---
+
+### Desempeño del Modelo
+
+- **Puntaje R² en el conjunto de entrenamiento**: `0.3426562978062938`  
+- **Puntaje R² en el conjunto de prueba**: `0.11861934633834936`  
+- **MSE en el conjunto de entrenamiento**: `0.15307869724863796`  
+- **MSE en el conjunto de prueba**: `0.1285249439417473`
+
+---
+
+### Comparación de los Primeros 20 Valores (Valor Real vs Valor Predicho)
+
+|   #   | Valor Real | Valor Predicho |
+|-------|------------|---------------|
+|   0   |    3.80    |     4.24      |
+|   1   |    3.75    |     4.32      |
+|   2   |    3.95    |     4.38      |
+|   3   |    4.22    |     4.46      |
+|   4   |    4.32    |     4.50      |
+|   5   |    4.53    |     4.53      |
+|   6   |    4.50    |     4.57      |
+|   7   |    4.99    |     4.58      |
+|   8   |    4.72    |     4.60      |
+|   9   |    4.21    |     4.59      |
+|  10   |    4.63    |     4.54      |
+|  11   |    4.61    |     4.52      |
+|  12   |    4.00    |     4.50      |
+|  13   |    4.19    |     4.52      |
+|  14   |    3.96    |     4.53      |
+|  15   |    5.13    |     4.53      |
+|  16   |    4.75    |     4.53      |
+|  17   |    4.12    |     4.52      |
+|  18   |    4.64    |     4.55      |
+|  19   |    4.50    |     4.55      |
+
+
+El modelo de regresión lineal tiene un desempeño moderado, con una capacidad limitada para predecir el consumo de energía en el conjunto de prueba. El bajo valor de R² en ambos conjuntos sugiere que los predictores actuales (temperaturas promedio e instantáneas, radiación global, etc.) no explican de manera óptima las variaciones en el consumo de energía.
+Las diferencias entre los puntajes R² de entrenamiento y prueba y el hecho de que los valores de R² sean relativamente bajos indican que el modelo podría necesitar más características o ajustes para mejorar su desempeño, como la inclusión de más variables, la revisión de los datos para detectar patrones adicionales, o el uso de otros modelos más complejos.
+
+Probaremos con un modelo polinomico:
+
+
 
