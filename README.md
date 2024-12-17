@@ -400,8 +400,6 @@ cada Energy_Meters.
  - Detectar zonas o clientes de alto o bajo consumo para ofrecer estrategias de optimización energética.
  - ¿Existe alguna tendencia en el consumo inicial relacionada con la estación del año?
 
-![datawprk](img/mes_cohorte_masde15.png)
-
 
 ## Matriz de retención 
 
@@ -412,11 +410,15 @@ La tasa de retención en este caso podría interpretarse como la proporción de 
 ### Interpretación:
 
 **Alto porcentaje de retención:** Si la tasa de retención es alta (por ejemplo, 80-90%), significa que la mayoría de los medidores que comenzaron con un consumo inicial alto (>15 kWh) continúan en este rango de consumo en los meses posteriores.
-**Bajo porcentaje de retención:** Si la tasa de retención disminuye rápidamente en los meses siguientes, esto indica que muchos medidores que inicialmente tenían un alto consumo (>15 kWh) no mantuvieron este nivel de uso en el tiempo.
-Insights posibles:
 
-Patrones de consumo estacional: Un bajo nivel de retención podría ser un indicador de patrones de consumo estacionales, donde el consumo inicial >15 kWh ocurrió durante meses específicos (por ejemplo, verano o invierno), pero no se mantuvo en otros meses.
-Impacto de eventos externos: Cambios en la retención podrían estar relacionados con eventos externos, como cambios en tarifas eléctricas, condiciones climáticas o programas de eficiencia energética. 
+**Bajo porcentaje de retención:** Si la tasa de retención disminuye rápidamente en los meses siguientes, esto indica que muchos medidores que inicialmente tenían un alto consumo (>15 kWh) no mantuvieron este nivel de uso en el tiempo.
+
+### Insights:
+
+**Patrones de consumo estacional:** Un bajo nivel de retención podría ser un indicador de patrones de consumo estacionales, donde el consumo inicial >15 kWh ocurrió durante meses específicos (por ejemplo, verano o invierno), pero no se mantuvo en otros meses.
+
+
+**Impacto de eventos externos:** Cambios en la retención podrían estar relacionados con eventos externos, condiciones climáticas o programas de eficiencia energética. 
 
 ![datawprk](img/Tasa_retencion.png)
 
