@@ -360,6 +360,11 @@ Lo que nos corrobora que son mediciones de viviendas familiares
 
 ![datawprk](img/segmento_consumo_por_condiciones_meteorologicas.png) 
 
+## Análisis de Tendencias nos centramos en el 'Energy_Mete'35  y 91 
+
+Este enfoque permite observar las tendencias individuales de cada variable meteorológica y su relación con el consumo energético (Energy_Meter_35), ayudando a identificar los patrones 
+obsevados,en particular la influencia de la temperatura y la temperatura instantanea 
+
 ## Relaciones entre las variables de consumo y meteorológicas.
 
 ![datawprk](img/rela_91.PNG)
@@ -370,12 +375,7 @@ Lo que nos corrobora que son mediciones de viviendas familiares
 
 ## De la matriz de correlación ya con los datos sin valores nulos no observamos fuertes correlaciones entre las variables meteorológicas y el consumo, destaca un poco el 'Energy_Meter'  91 y el 35 y su realación con la temperatura . Sin embargo en la Gráfica de puntos obsrvamos ciertas relación entre estas las variables. 
 
-## Análisis de Tendencias nos centramos en el 'Energy_Mete'35  y 91 
 
-Este enfoque permite observar las tendencias individuales de cada variable meteorológica y su relación con el consumo energético (Energy_Meter_35), ayudando a identificar los patrones 
-obsevados,en particular la influencia de la temperatura y la temperatura instantanea 
-
-![datawprk](img/analisis_tendencias.png)
 
 # Análisis de Cohortes
 
