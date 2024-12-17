@@ -507,10 +507,11 @@ y estos son los resultados
 |  19   |    4.50    |     4.55      |
 
 
-El modelo de regresión lineal tiene un desempeño moderado, con una capacidad limitada para predecir el consumo de energía en el conjunto de prueba. El bajo valor de R² en ambos conjuntos sugiere que los predictores actuales (temperaturas promedio e instantáneas, radiación global, etc.) no explican de manera óptima las variaciones en el consumo de energía.
+El modelo de regresión lineal tiene un desempeño moderado, con una capacidad limitada para predecir el consumo de energía en el conjunto de prueba. El bajo valor de R² en ambos conjuntos sugiere que los predictores actuales (temperaturas promedio e instantáneas.) no explican de manera óptima las variaciones en el consumo de energía.
 Las diferencias entre los puntajes R² de entrenamiento y prueba y el hecho de que los valores de R² sean relativamente bajos indican que el modelo podría necesitar más características o ajustes para mejorar su desempeño, como la inclusión de más variables, la revisión de los datos para detectar patrones adicionales, o el uso de otros modelos más complejos.
 
-Probaremos con un modelo polinomico:
+Hemos usado más características y combinaciones entre ellas y el escoger los datos de entrenamiento y prueba y no me hemos logrado un mejor ajuste de las metricas. Por lo que probaremos con un modelo polinomico
+
 
 
 
