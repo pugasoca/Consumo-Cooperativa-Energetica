@@ -449,7 +449,7 @@ Estacionalidad: Observar si el monto promedio del consumo está influenciado por
 
 Del análisis de cohortes como complemento a la matriz de correlación vemos que el Energy_meter35 nunca alcanzo consumir mas de 15 kwh , Energy_meter 91 mantuvo un consumo elevado durante todo el año, con poca fluctuación respecto a la temperatura.
 
-Intentamos buscar un buen modelo para Predecir los valores del consumo de Energy_meter 91 usando como variables predictoras :  selected_features= ['Avg_Temp','Inst_Temp']
+**Intentamos buscar un buen modelo para Predecir los valores del consumo de Energy_meter 35 usando como variables predictoras :  selected_features= ['Avg_Temp','Inst_Temp']**
 
 y estos son los resultados
 
