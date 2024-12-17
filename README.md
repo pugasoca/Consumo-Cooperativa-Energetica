@@ -362,7 +362,11 @@ Lo que nos corrobora que son mediciones de viviendas familiares
 
 ## Relaciones entre las variables de consumo y meteorológicas.
 
-![datawprk](img/todas_correlaciones.png)
+![datawprk](img/rela_91.png)
+
+![datawprk](img/rela35.png)
+
+![datawprk](img/realaavetemp35.png)
 
 ## De la matriz de correlación ya con los datos sin valores nulos no observamos fuertes correlaciones entre las variables meteorológicas y el consumo, destaca un poco el 'Energy_Meter'  91 . La conclusión más importante que obtenemos no es la magnitud de la correlación, sino el signo vemos como la temperatura afecta el consumo inversamente, al igual que el resto de variables meteorológicas exceptuando las relacionadas con la lluvia, esto puede ser debido a la poca lluvia en el período analizado. Vemos también que 'Avg_Rel_Humidity', 'Avg_Temp' como era lógico tiene una correlación con 'Total_Global_Rad'
 
