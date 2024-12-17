@@ -422,6 +422,8 @@ La tasa de retención en este caso podría interpretarse como la proporción de 
 
 ![datawprk](img/Tasa_retencion.png)
 
+**Monto Promedio del consumo Cohorte y Mes**
 
+![datawprk](img/Promedio_Consumo.png)
 
 
