@@ -534,4 +534,43 @@ Se utilizó una **validación cruzada** de 5 pliegues para evaluar el desempeño
 ---
 
 ### Conclusiones
-El mejor grado de polinomio encontrado fue **1**, lo cual indica que un modelo lineal es suficiente para estos datos y no se observa una mejora significativa al incrementar la complejidad del modelo polinómico.
+El mejor grado de polinomio encontrado fue **1**, lo cual indica que un modelo lineal es suficiente para estos datos y no se observa una mejora significativa al incrementar la complejidad del modelo polinómico.## Resultados de Validación Cruzada
+
+### Métricas R² en Validación Cruzada
+| Pliegue | R² Score    |
+|---------|-------------|
+| 1       | 0.2997      |
+| 2       | 0.2317      |
+| 3       | 0.1688      |
+| 4       | 0.3224      |
+| 5       | 0.3502      |
+
+**Promedio de R²**: `0.27`
+
+---
+
+### Métricas RMSE en Validación Cruzada
+| Pliegue | RMSE        |
+|---------|-------------|
+| 1       | 0.4307      |
+| 2       | 0.4268      |
+| 3       | 0.4560      |
+| 4       | 0.4114      |
+| 5       | 0.3453      |
+
+**Promedio de RMSE**: `0.41`
+
+---
+### Cross-Validation 
+
+### Interpretación
+- **R²**: El promedio del **R²** obtenido en la validación cruzada es `0.27`, lo que sugiere que el modelo tiene una capacidad limitada para explicar la variabilidad de los datos.
+- **RMSE**: El promedio del **RMSE** es `0.41`, indicando un error medio moderado en las predicciones del modelo.
+
+---
+
+### Observaciones
+Los resultados muestran una variabilidad entre pliegues, lo cual es normal en validación cruzada. Sin embargo, el desempeño del modelo es relativamente consistente entre los distintos pliegues.
+
+
+
