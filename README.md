@@ -629,5 +629,44 @@ La **Lasso Regression** ofrece el mejor equilibrio entre error en entrenamiento 
 ### Observaciones
 Los resultados muestran una variabilidad entre pliegues, lo cual es normal en validación cruzada. Sin embargo, el desempeño del modelo es relativamente consistente entre los distintos pliegues.
 
+### Conclusiones
+
+En función de los objetivos iniciales planteados, se han logrado los siguientes resultados y aportes relevantes:
+
+#### 1. Caracterización del perfil de consumo de energía eléctrica
+Se identificaron patrones de consumo energético en función de las condiciones climáticas, como la temperatura . Mediante la caracterización de los datos proporcionados por los medidores inteligentes, se pudo observar una correlación moderada entre el consumo energético y variables como la **temperatura promedio** y la **temperatura instantánea**. Este hallazgo refuerza la idea de que factores climáticos desempeñan un papel clave en los hábitos de consumo eléctrico de los habitantes de la región.
+
+#### 2. Comprensión de comportamientos y tendencias de consumo
+El análisis de los datos permitió detectar tendencias estacionales y diarias en el uso de la energía. La creación de características temporales como la hora, el día, el mes y la distinción entre días laborables y fines de semana proporcionó una visión detallada del comportamiento de consumo. Estos resultados pueden ayudar tanto a los consumidores como a las empresas energéticas a tomar decisiones más informadas relacionadas con la compra, venta o almacenamiento de energía, especialmente en función de condiciones climáticas previsibles.
+
+#### 3. Evaluación del comportamiento de los medidores inteligentes PLC
+A lo largo del proyecto se analizaron los datos proporcionados por los medidores inteligentes para evaluar su funcionamiento. Se identificó que la calidad y consistencia de los datos eran adecuadas para su uso en la modelización predictiva, a pesar de que se encontaró algun funcionamiento incorrecto de los medidores PLC en el monitoreo del consumo energético.
+
+#### 4. Construcción de modelos predictivos de consumo energético
+Se implementaron modelos de aprendizaje automático, como la **regresión lineal** y modelos regularizados como **Ridge**, **Lasso** y **ElasticNet**, capaces de predecir el consumo futuro en función de las condiciones climáticas y temporales. Los resultados obtenidos muestran que:
+- El modelo de **regresión lineal simple** proporcionó una base sólida con un buen desempeño general.
+- La inclusión de técnicas de regularización (Ridge, Lasso y ElasticNet) mejoró la estabilidad de los modelos al manejar la multicolinealidad en los datos y ajustar de manera más robusta el consumo energético frente a los factores ambientales.
+- El desempeño de los modelos es susceptible de mejorarse aún más con la incorporación de datos adicionales o técnicas avanzadas, como modelos no lineales.
+
+Estos modelos permiten estimar con precisión el consumo energético futuro y evaluar el impacto de las variables ambientales, lo que facilita la planificación eficiente de los recursos energéticos.
+
+#### 5. Aplicación de conocimientos adquiridos
+Desde una perspectiva personal  el proyecto permitió aplicar con éxito los conocimientos adquiridos durante el curso en **manipulación de datos**, **análisis exploratorio**, **implementación de modelos de machine learning** y **evaluación de resultados**. La combinación de habilidades técnicas con la resolución de un problema práctico contribuyó al desarrollo de competencias profesionales clave en análisis de datos y aprendizaje automático.
+
+---
+
+### Logros principales
+- Identificación de patrones de consumo y correlación con variables climáticas.
+- Evaluación del funcionamiento de los medidores inteligentes.
+- Creación de modelos de aprendizaje capaces de predecir el consumo energético futuro.
+- Generación de resultados aplicables tanto para consumidores como para la planificación energética.
+
+### TO DO
+
+- Modelos de Clasificación :Desarrollar y optimizar modelos de clasificación (como árboles de decisión, SVM, k-NN
+- Ampliar sobre Validación de Modelos
+
+Este proyecto no solo alcanza los objetivos planteados, sino que también sienta las bases para futuros estudios en optimización del consumo energético y en el uso de modelos más avanzados que integren información climática y de consumo en tiempo real.
+
 
 
