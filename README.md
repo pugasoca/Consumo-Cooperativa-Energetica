@@ -534,7 +534,64 @@ Se utilizó una **validación cruzada** de 5 pliegues para evaluar el desempeño
 ---
 
 ### Conclusiones
-El mejor grado de polinomio encontrado fue **1**, lo cual indica que un modelo lineal es suficiente para estos datos y no se observa una mejora significativa al incrementar la complejidad del modelo polinómico.## Resultados de Validación Cruzada
+El mejor grado de polinomio encontrado fue **1**, lo cual indica que un modelo lineal es suficiente para estos datos y no se observa una mejora significativa al incrementar la complejidad del modelo polinómico.## 
+
+## Regularización de un Modelo Polinómico
+
+### Resultados del Modelo Regularizado
+
+#### 1. **Ridge Regression**  
+- **Train**:  
+  - RMSE: `0.36`  
+  - R²: `0.35`  
+- **Test**:  
+  - RMSE: `0.40`  
+  - R²: `0.15`  
+
+---
+
+#### 2. **Lasso Regression**  
+- **Train**:  
+  - RMSE: `0.38`  
+  - R²: `0.30`  
+- **Test**:  
+  - RMSE: `0.38`  
+  - R²: `0.23`  
+
+---
+
+#### 3. **ElasticNet (Combinación de L1 y L2)**  
+- **Train**:  
+  - RMSE: `0.38`  
+  - R²: `0.30`  
+- **Test**:  
+  - RMSE: `0.38`  
+  - R²: `0.22`  
+
+---
+
+### Comparación de Resultados
+
+| Método           | Train RMSE | Train R² | Test RMSE | Test R² |
+|------------------|------------|----------|-----------|---------|
+| Ridge            | 0.36       | 0.35     | 0.40      | 0.15    |
+| Lasso            | 0.38       | 0.30     | 0.38      | 0.23    |
+| ElasticNet       | 0.38       | 0.30     | 0.38      | 0.22    |
+
+---
+
+### Interpretación  
+- **Ridge Regression** tiene un mejor desempeño en el conjunto de entrenamiento con un R² de `0.35`, pero generaliza peor en el conjunto de prueba (`R² = 0.15`).  
+- **Lasso Regression** y **ElasticNet** muestran resultados similares en el entrenamiento, pero **Lasso** tiene un mejor desempeño en el conjunto de prueba (`R² = 0.23`).  
+- En términos de **Test RMSE**, tanto Lasso como ElasticNet obtienen valores más bajos (`0.38`) en comparación con Ridge (`0.40`).
+
+---
+
+### Conclusión  
+La **Lasso Regression** ofrece el mejor equilibrio entre error en entrenamiento y generalización en el conjunto de prueba, con el mayor R² en test.
+
+
+## Resultados de Validación Cruzada
 
 ### Métricas R² en Validación Cruzada
 | Pliegue | R² Score    |
