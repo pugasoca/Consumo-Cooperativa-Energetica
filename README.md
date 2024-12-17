@@ -503,10 +503,19 @@ y estos son los resultados
 
 
 El modelo de regresión lineal tiene un desempeño moderado, con una capacidad limitada para predecir el consumo de energía en el conjunto de prueba. El bajo valor de R² en ambos conjuntos sugiere que los predictores actuales (temperaturas promedio e instantáneas.) no explican de manera óptima las variaciones en el consumo de energía.
-Las diferencias entre los puntajes R² de entrenamiento y prueba y el hecho de que los valores de R² sean relativamente bajos indican que el modelo podría necesitar más características o ajustes para mejorar su desempeño, como la inclusión de más variables, la revisión de los datos para detectar patrones adicionales, o el uso de otros modelos más complejos.
+Las diferencias entre los puntajes R² de entrenamiento y prueba y el hecho de que los valores de R² sean relativamente bajos indican que el modelo podría necesitar más características o ajustes para mejorar su desempeño, como la inclusión de más variables, la revisión de los datos para detectar patrones adicionales, o el uso de otros modelos más complejos. 
 
-Hemos usado más características y combinaciones entre ellas y la selección de los datos de entrenamiento y prueba y no me hemos logrado un mejor ajuste de las metricas. Por lo que probaremos con un modelo polinomico
+Hemos usado más características y combinaciones entre ellas y la selección de los datos de entrenamiento y prueba y no me hemos logrado un mejor ajuste de las métricas. Por lo que probaremos con un modelo polinómico
+luego de probar con diferentes grados y diferentes distribución de entrenamiento y prueba  mejoran muy poco las métricas del modelo en cuanto a R² , pero el RMSE alto. 
 
+Train: (388, 3), Test: (98, 3)
+Train RMSE: 0.40, R²: 0.31
+Test RMSE: 0.50, R²: 0.15
 
+Implementamos un pipeline en Scikit-learn que encadena varias transformaciones y un modelo de regresión lineal, y luego  una búsqueda usando (Grid Search) para encontrar el mejor grado del polinomio en un modelo de regresión polinómica. Buscamos encontrar el mejor grado de polinomio (entre 1 y 4) para un modelo de regresión lineal sobre un conjunto de datos transformado polinómicamente. Utiliza una validación cruzada de 5 pliegues para evaluar el desempeño de los modelos con diferentes grados de polinomio y selecciona el que tiene el mejor R².
 
-
+Train: (388, 3), Test: (98, 3)
+Train RMSE: 0.40, R²: 0.31
+Test RMSE: 0.50, R²: 0.15
+Mejores hiperparámetros: {'poly__degree': 1}
+Mejor R² obtenido: 0.25
