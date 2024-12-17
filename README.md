@@ -253,11 +253,11 @@ Hacemos el Merge entre los dos dataset de valores de PlC y datos meteorológicos
   correlaciones significativas entre las variables meteorológicas y las columnas de consumo de energía (por ejemplo, una correlación de 0.7 o superior). No observamos relaciones significativas entre
   las variables de consumo y las meteorologicas para poder usar la imputación por regresion lineal. 
 
-No obteniendo ninguna correlacion siginifivativa entre los valores de consumo,ni entre ellos y las , decidimos tambien imputar los valores nulos de consumo usando metodos basado en KNN pero antes hacemos el escalado de los datos para garantizar que los valores imputados sean consistentes y reflejen patrones reales en las variables.
+No obteniendo ninguna correlacion siginifivativa entre los valores de consumo, ni entre ellos y las varaiables meteorologicas , decidimos tambien imputar los valores nulos de consumo usando metodos basado en KNN pero antes hacemos el escalado de los datos para garantizar que los valores imputados sean consistentes y reflejen patrones reales en las variables.
 
-## Matriz correlacion solo con datos de Wheather sin nulos
+## Matriz correlacion 
 
-![datawprk](img/matrizcorrelacion.png)
+![datawprk](img/matrizcorrelacionfinal.png)
 
 
 ![datawprk](img/series_mensual_modificado.png)
@@ -368,8 +368,7 @@ Lo que nos corrobora que son mediciones de viviendas familiares
 
 ![datawprk](img/realaavetemp35.PNG)
 
-## De la matriz de correlación ya con los datos sin valores nulos no observamos fuertes correlaciones entre las variables meteorológicas y el consumo, destaca un poco el 'Energy_Meter'  91 . La conclusión más importante que obtenemos no es la magnitud de la correlación, sino el signo vemos como la temperatura afecta el consumo inversamente, al igual que el resto de variables meteorológicas exceptuando las relacionadas con la lluvia, esto puede ser debido a la poca lluvia en el período analizado. Vemos también que 'Avg_Rel_Humidity', 'Avg_Temp' como era lógico tiene una correlación con 'Total_Global_Rad'
-
+## De la matriz de correlación ya con los datos sin valores nulos no observamos fuertes correlaciones entre las variables meteorológicas y el consumo, destaca un poco el 'Energy_Meter'  91 y el 35 y su realación con la temperatura . Sin embargo en la Gráfica de puntos obsrvamos ciertas relación entre estas las variables. 
 
 ## Análisis de Tendencias nos centramos en el 'Energy_Mete'35  y 91 
 
