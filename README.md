@@ -443,5 +443,5 @@ Estacionalidad: Observar si el monto promedio del consumo está influenciado por
 
 **Temperatura Promedio**
 
-![datawprk](img/Promedio_Consumo.png)
+![datawprk](img/Promedio_Temperatura.png)
 
